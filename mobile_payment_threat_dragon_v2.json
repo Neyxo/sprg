@@ -1,0 +1,514 @@
+{
+  "version": "2.0.0",
+  "summary": {
+    "title": "Mobile Payment – Threat Model (DFD)",
+    "owner": "SPR G",
+    "id": "9dc85498-40fa-4c89-93f1-1a90c78479f6",
+    "description": "DFD Level 0 + Level 1 (PoS) mit Boundaries/Grouping kompatibel zu Threat Dragon.",
+    "created": 1761557902825,
+    "modified": 1761557902825,
+    "threats": []
+  },
+  "detail": {
+    "diagrams": [
+      {
+        "title": "DFD Level 0 – Context",
+        "diagramType": "tm.FlowDiagram",
+        "diagramJson": {
+          "nodeDataArray": [
+            {
+              "key": "TB1",
+              "category": "tm.Boundary",
+              "text": "TB1 – Kunden-Gerät",
+              "isGroup": true,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 420,
+                "h": 300
+              }
+            },
+            {
+              "key": "TB2",
+              "category": "tm.Boundary",
+              "text": "TB2 – Öffentliche Netze",
+              "isGroup": true,
+              "bounds": {
+                "x": 440,
+                "y": 0,
+                "w": 320,
+                "h": 300
+              }
+            },
+            {
+              "key": "TB3",
+              "category": "tm.Boundary",
+              "text": "TB3 – Merchant-Umfeld",
+              "isGroup": true,
+              "bounds": {
+                "x": 780,
+                "y": 0,
+                "w": 320,
+                "h": 300
+              }
+            },
+            {
+              "key": "TB4",
+              "category": "tm.Boundary",
+              "text": "TB4 – Anbieter-Backend (intern)",
+              "isGroup": true,
+              "bounds": {
+                "x": 0,
+                "y": 320,
+                "w": 700,
+                "h": 360
+              }
+            },
+            {
+              "key": "TB5",
+              "category": "tm.Boundary",
+              "text": "TB5 – Externe Dritte",
+              "isGroup": true,
+              "bounds": {
+                "x": 720,
+                "y": 320,
+                "w": 380,
+                "h": 360
+              }
+            },
+            {
+              "key": "E1",
+              "category": "tm.Actor",
+              "text": "E1 Kunde",
+              "loc": "50 60",
+              "description": "Endnutzer mit Mobile App",
+              "group": "TB1"
+            },
+            {
+              "key": "P1",
+              "category": "tm.Process",
+              "text": "P1 Mobile App",
+              "loc": "220 120",
+              "description": "iOS/Android Client; Auth via Biometrics/Passcode; Zahlungen (NFC/QR), P2P, Top-Ups.",
+              "group": "TB1"
+            },
+            {
+              "key": "E2",
+              "category": "tm.Actor",
+              "text": "E2 PoS/Kassensystem",
+              "loc": "820 60",
+              "description": "Nimmt Zahlungen via NFC/QR entgegen.",
+              "group": "TB3"
+            },
+            {
+              "key": "E3",
+              "category": "tm.Actor",
+              "text": "E3 Webshop",
+              "loc": "960 200",
+              "description": "Erzeugt Payment Sessions/QR, erhält Status.",
+              "group": "TB3"
+            },
+            {
+              "key": "P2",
+              "category": "tm.Process",
+              "text": "P2 Customer Mgmt API",
+              "loc": "60 380",
+              "description": "API-Layer: Kunden, Sessions, 2FA, Tokenisierung.",
+              "group": "TB4"
+            },
+            {
+              "key": "P3",
+              "category": "tm.Process",
+              "text": "P3 Merchant Mgmt",
+              "loc": "260 380",
+              "description": "Händlerprofile, Terminals, Settlement-Parameter.",
+              "group": "TB4"
+            },
+            {
+              "key": "P4",
+              "category": "tm.Process",
+              "text": "P4 Core Banking/Ledger",
+              "loc": "460 380",
+              "description": "Autorisierung, Buchung, Settlement.",
+              "group": "TB4"
+            },
+            {
+              "key": "P5",
+              "category": "tm.Process",
+              "text": "P5 Admin-Frontend (2FA)",
+              "loc": "260 540",
+              "description": "Externe Web-UI für Händler-Self-Service.",
+              "group": "TB4"
+            },
+            {
+              "key": "D1",
+              "category": "tm.Store",
+              "text": "D1 Customer DB",
+              "loc": "60 620",
+              "description": "KYC, Gerätebindungen, Keys.",
+              "group": "TB4"
+            },
+            {
+              "key": "D2",
+              "category": "tm.Store",
+              "text": "D2 Merchant DB",
+              "loc": "260 620",
+              "description": "Händlerstammdaten, Terminal-Keys, Rollen.",
+              "group": "TB4"
+            },
+            {
+              "key": "D3",
+              "category": "tm.Store",
+              "text": "D3 Ledger/Transactions",
+              "loc": "460 620",
+              "description": "Transaktionsbuchhaltung, Audit.",
+              "group": "TB4"
+            },
+            {
+              "key": "D4",
+              "category": "tm.Store",
+              "text": "D4 Voucher/Gift DB",
+              "loc": "60 720",
+              "description": "Voucher, Seriennummern, Status.",
+              "group": "TB4"
+            },
+            {
+              "key": "D5",
+              "category": "tm.Store",
+              "text": "D5 Token Vault",
+              "loc": "260 720",
+              "description": "Zahlungstokens (PAN-Tokenisierung), HSM-gestützt.",
+              "group": "TB4"
+            },
+            {
+              "key": "E4",
+              "category": "tm.Actor",
+              "text": "E4 Externe Bank",
+              "loc": "760 380",
+              "description": "SEPA/Instant/ACH Schnittstellen.",
+              "group": "TB5"
+            },
+            {
+              "key": "E5",
+              "category": "tm.Actor",
+              "text": "E5 Kreditkartenanbieter",
+              "loc": "880 380",
+              "description": "Autorisierung/Tokenization.",
+              "group": "TB5"
+            },
+            {
+              "key": "E6",
+              "category": "tm.Actor",
+              "text": "E6 App Store",
+              "loc": "760 540",
+              "description": "Distribution/Updates; Supply-Chain-Risiken.",
+              "group": "TB5"
+            },
+            {
+              "key": "E7",
+              "category": "tm.Actor",
+              "text": "E7 SMS/Push-Provider",
+              "loc": "960 540",
+              "description": "OTP/Push Versand.",
+              "group": "TB5"
+            }
+          ],
+          "linkDataArray": [
+            {
+              "category": "tm.Flow",
+              "from": "E1",
+              "to": "P1",
+              "text": "F0.1 Login/Payment/P2P/Top-Up"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P1",
+              "to": "E2",
+              "text": "F0.3 Payment-Start NFC/QR/Code"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P1",
+              "to": "P2",
+              "text": "F0.2 API Calls (TLS/mTLS)"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "E2",
+              "to": "P2",
+              "text": "F0.2b Auth-Request"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P2",
+              "to": "P4",
+              "text": "F0.2c Authorize/Reserve"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P4",
+              "to": "E4",
+              "text": "F0.4 Bank Clearing/SEPA"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P4",
+              "to": "E5",
+              "text": "F0.4b Card Auth/Settlement"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P2",
+              "to": "P5",
+              "text": "F0.5 Merchant Admin (2FA)"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P2",
+              "to": "E7",
+              "text": "F0.6 OTP/Push"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P1",
+              "to": "E6",
+              "text": "F0.7 App Download/Update"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P2",
+              "to": "D1",
+              "text": "Status/Kundenpflege"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P3",
+              "to": "D2",
+              "text": "Händlerpflege"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P4",
+              "to": "D3",
+              "text": "Buchungen/Audit"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P2",
+              "to": "D4",
+              "text": "Voucher redeem/validate"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P2",
+              "to": "D5",
+              "text": "Tokenpflege"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P2",
+              "to": "E3",
+              "text": "F0.3b Webshop Session/Status"
+            }
+          ]
+        }
+      },
+      {
+        "title": "DFD Level 1 – PoS Zahlung",
+        "diagramType": "tm.FlowDiagram",
+        "diagramJson": {
+          "nodeDataArray": [
+            {
+              "key": "TB1",
+              "category": "tm.Boundary",
+              "text": "TB1 – Kunden-Gerät",
+              "isGroup": true,
+              "bounds": {
+                "x": 0,
+                "y": 0,
+                "w": 420,
+                "h": 280
+              }
+            },
+            {
+              "key": "TB3",
+              "category": "tm.Boundary",
+              "text": "TB3 – Merchant-Umfeld",
+              "isGroup": true,
+              "bounds": {
+                "x": 440,
+                "y": 0,
+                "w": 320,
+                "h": 280
+              }
+            },
+            {
+              "key": "TB4",
+              "category": "tm.Boundary",
+              "text": "TB4 – Anbieter-Backend (intern)",
+              "isGroup": true,
+              "bounds": {
+                "x": 0,
+                "y": 300,
+                "w": 760,
+                "h": 320
+              }
+            },
+            {
+              "key": "TB5",
+              "category": "tm.Boundary",
+              "text": "TB5 – Externe Dritte",
+              "isGroup": true,
+              "bounds": {
+                "x": 780,
+                "y": 300,
+                "w": 300,
+                "h": 320
+              }
+            },
+            {
+              "key": "P1",
+              "category": "tm.Process",
+              "text": "P1 Mobile App",
+              "loc": "60 100",
+              "description": "Startet Zahlung; erzeugt Nonce/cryptogram.",
+              "group": "TB1"
+            },
+            {
+              "key": "E2",
+              "category": "tm.Actor",
+              "text": "E2 PoS/Kassensystem",
+              "loc": "520 100",
+              "description": "Terminal; leitet Autorisierungsanfrage weiter.",
+              "group": "TB3"
+            },
+            {
+              "key": "P2",
+              "category": "tm.Process",
+              "text": "P2 Customer Mgmt API",
+              "loc": "60 360",
+              "description": "Validierung, Token, 2FA.",
+              "group": "TB4"
+            },
+            {
+              "key": "P4",
+              "category": "tm.Process",
+              "text": "P4 Core Banking/Ledger",
+              "loc": "260 360",
+              "description": "Autorisierung/Reservierung.",
+              "group": "TB4"
+            },
+            {
+              "key": "D3",
+              "category": "tm.Store",
+              "text": "D3 Ledger/Transactions",
+              "loc": "460 480",
+              "description": "Transaktionen/Audit.",
+              "group": "TB4"
+            },
+            {
+              "key": "D1",
+              "category": "tm.Store",
+              "text": "D1 Customer DB",
+              "loc": "60 520",
+              "description": "Kundenstatus/Bindings.",
+              "group": "TB4"
+            },
+            {
+              "key": "D5",
+              "category": "tm.Store",
+              "text": "D5 Token Vault",
+              "loc": "260 520",
+              "description": "Zahlungstokens/HSM.",
+              "group": "TB4"
+            },
+            {
+              "key": "E4",
+              "category": "tm.Actor",
+              "text": "E4 Bank",
+              "loc": "820 360",
+              "description": "SEPA/Instant.",
+              "group": "TB5"
+            },
+            {
+              "key": "E5",
+              "category": "tm.Actor",
+              "text": "E5 Karten-Netz",
+              "loc": "900 480",
+              "description": "Card Auth/Settlement.",
+              "group": "TB5"
+            }
+          ],
+          "linkDataArray": [
+            {
+              "category": "tm.Flow",
+              "from": "P1",
+              "to": "E2",
+              "text": "F1.1 Payment Request {amount, merchantId, ts, nonce}"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "E2",
+              "to": "P2",
+              "text": "F1.2 Authorization Request {terminalId, amount, txId, cryptogram}"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P2",
+              "to": "P4",
+              "text": "F1.3 Authorize & Reserve {customerToken, amount}"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P4",
+              "to": "E4",
+              "text": "F1.4 Bank Debit/Authorization"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P4",
+              "to": "E5",
+              "text": "F1.4b Card Authorization"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P4",
+              "to": "P2",
+              "text": "F1.5 Auth-Result {approved/declined, code}"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P2",
+              "to": "E2",
+              "text": "F1.6 Result to PoS"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P2",
+              "to": "P1",
+              "text": "F1.6b Result to App"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P4",
+              "to": "D3",
+              "text": "Persist Booking"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P2",
+              "to": "D1",
+              "text": "Update Status"
+            },
+            {
+              "category": "tm.Flow",
+              "from": "P2",
+              "to": "D5",
+              "text": "Maintain Token"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
