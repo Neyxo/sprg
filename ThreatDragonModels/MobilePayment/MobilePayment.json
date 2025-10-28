@@ -28,8 +28,20 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "23a79f12-74a9-41be-a535-bd350c2f94eb",
+            "id": "d781cfe2-b73a-4433-9788-1a77fc6bc337",
             "zIndex": -1,
+            "attrs": {
+              "text": {
+                "text": "TB1 – Kunden-Gerät"
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB1 – Kunden-Gerät",
@@ -49,8 +61,20 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "334b2887-f86f-4dea-9922-0f9298a77c82",
+            "id": "74bd312f-c833-4de5-b45b-e51f88973c81",
             "zIndex": -1,
+            "attrs": {
+              "text": {
+                "text": "TB2 – Öffentliche Netze"
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB2 – Öffentliche Netze",
@@ -70,8 +94,20 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "2a10d75a-7bc8-423b-b159-dae7af6a13c2",
+            "id": "7baf9291-98b3-4cd1-b600-288542c3bce2",
             "zIndex": -1,
+            "attrs": {
+              "text": {
+                "text": "TB3 – Merchant-Umfeld"
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB3 – Merchant-Umfeld",
@@ -91,11 +127,23 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "58867ed5-7ce6-4a49-a8c8-e9a35c14d251",
+            "id": "6ea84c48-5e71-4ec9-85fb-9c7d7b6f2e55",
             "zIndex": -1,
+            "attrs": {
+              "text": {
+                "text": "TB4 – Anbieter-Backend (intern)"
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "TB4 – Anbieter-Backend (i...",
+              "name": "TB4 – Anbieter-Backend (intern)",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -112,8 +160,20 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "ab23d05e-060e-4555-90e8-d38eb8456433",
+            "id": "42fb6e2b-f255-4d99-b029-890de0ce4c04",
             "zIndex": -1,
+            "attrs": {
+              "text": {
+                "text": "TB5 – Externe Dritte"
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB5 – Externe Dritte",
@@ -136,6 +196,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "E1 Kunde"
               }
             },
             "visible": true,
@@ -206,24 +269,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "b9cb2557-78ef-44f6-bb3d-57d73022a0e8"
+                  "id": "5c05436c-cf6b-42cb-9566-df017a980b2f"
                 },
                 {
                   "group": "right",
-                  "id": "e670bb82-9bd0-4fde-a266-0aab59cffe8c"
+                  "id": "140a195d-1a03-495e-a358-5b2fae92702e"
                 },
                 {
                   "group": "bottom",
-                  "id": "1689d458-7fbc-4f23-bc7c-7ea4d7f94d6e"
+                  "id": "7966f8c9-18d6-4517-addb-16a2c8d0c63b"
                 },
                 {
                   "group": "left",
-                  "id": "691aa7f3-a6ab-4c11-9f1d-2cccb93636d2"
+                  "id": "7d0ad255-1fd4-43f8-9988-078f21c3e5f5"
                 }
               ]
             },
-            "id": "6a42d993-458c-4471-96d5-1cf0add84153",
+            "id": "d5b7616c-25cc-4b14-88f9-f560e69e9ef4",
             "zIndex": 0,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Actor",
               "name": "E1 Kunde",
@@ -250,6 +320,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "P1 Mobile App"
               }
             },
             "visible": true,
@@ -320,24 +393,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "df48b8f8-04f2-48c4-a80c-f14ff1e8f59b"
+                  "id": "f3aed0e8-1a95-46e5-882c-b9c7089d46d4"
                 },
                 {
                   "group": "right",
-                  "id": "066deaeb-db9d-4d4b-a43f-97f999482866"
+                  "id": "589bc3ea-08a5-4995-934e-ff677cf88150"
                 },
                 {
                   "group": "bottom",
-                  "id": "ad05b877-bf7e-48c7-9dbd-4d374d0f8aa4"
+                  "id": "d469c253-a20b-40b6-a4ed-0add5960b93b"
                 },
                 {
                   "group": "left",
-                  "id": "4a2e11ed-e96c-42a1-9623-34c839604f4b"
+                  "id": "eb55e7e5-cb99-4a20-9e83-92b980360609"
                 }
               ]
             },
-            "id": "212a50c4-6363-4027-9bdd-eaeeec1dfcbc",
+            "id": "013a192c-2cff-44ab-a574-2cfdfefb568d",
             "zIndex": 1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Process",
               "name": "P1 Mobile App",
@@ -367,6 +447,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "E2 PoS/Kassensystem"
               }
             },
             "visible": true,
@@ -437,24 +520,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "1b7445e7-32f6-4dec-94b8-640e407b449f"
+                  "id": "24323817-2ac7-4585-ad72-5924ddcf84d0"
                 },
                 {
                   "group": "right",
-                  "id": "83c6aed4-63da-4f53-9e1a-28e638eda319"
+                  "id": "44f6c864-bcd7-447b-9971-b7e50ce29a0f"
                 },
                 {
                   "group": "bottom",
-                  "id": "29d07b16-0a68-4a5f-a6a4-b24fe9f74d39"
+                  "id": "88b9144a-45f8-4f14-af1d-dd6e9ddb7672"
                 },
                 {
                   "group": "left",
-                  "id": "302c86a4-0925-421d-bb4f-1e5a1c9df9de"
+                  "id": "31adf27e-2fe0-45d3-a2e9-10d3d18d79de"
                 }
               ]
             },
-            "id": "424deba8-b9a0-4bd8-9dd9-c203b49e8b01",
+            "id": "247f683d-956d-4e42-a67c-d49b3339d453",
             "zIndex": 0,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Actor",
               "name": "E2 PoS/Kassensystem",
@@ -481,6 +571,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "E3 Webshop"
               }
             },
             "visible": true,
@@ -551,24 +644,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "091cdcc3-8822-4aba-8bad-689968566552"
+                  "id": "26dd6f33-e695-4fb1-9966-3ca6ba1a78ad"
                 },
                 {
                   "group": "right",
-                  "id": "899fb0d7-d746-4467-a15d-b2704eebbce2"
+                  "id": "239f59e7-c1bd-4a12-bcf0-caf3d80769ea"
                 },
                 {
                   "group": "bottom",
-                  "id": "1f171b8f-a220-453b-8ae6-4968e7cf3d96"
+                  "id": "039b68bd-4cf9-44fc-9336-93dc2726d3e5"
                 },
                 {
                   "group": "left",
-                  "id": "61a673e1-7ede-424e-9b39-201f6c6ccaa8"
+                  "id": "8b64c6bb-5180-4c17-8247-aa9d08f745c0"
                 }
               ]
             },
-            "id": "b731d19a-8b6d-469f-a603-ea32bdcca5db",
+            "id": "ea6bceb2-7c9b-412d-9cdd-ce3a4a8b16d4",
             "zIndex": 0,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Actor",
               "name": "E3 Webshop",
@@ -595,6 +695,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "P2 Customer Mgmt API"
               }
             },
             "visible": true,
@@ -665,24 +768,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "58d2f913-ff5a-451c-b52f-09d3e1816a21"
+                  "id": "c50dc6ae-d2d0-4613-8fcd-8f2d87571d20"
                 },
                 {
                   "group": "right",
-                  "id": "afe5fbec-b207-40da-a6ae-be9fac268ff2"
+                  "id": "b6439c12-610d-4149-a464-2eac2c3dac29"
                 },
                 {
                   "group": "bottom",
-                  "id": "497926c4-809a-428c-8115-802d4fe4ea3a"
+                  "id": "f9865857-ecbf-48cc-bfd6-a8e3292832d2"
                 },
                 {
                   "group": "left",
-                  "id": "8dae131c-458d-4c20-99af-c64cd45de951"
+                  "id": "7377d122-1cc8-4780-810e-455ffb7e6f5e"
                 }
               ]
             },
-            "id": "a1f0e1a5-4b10-41a2-9ea2-9f84f08c7efb",
+            "id": "bf749475-a0fe-4bf7-b229-e51454e973fa",
             "zIndex": 1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Process",
               "name": "P2 Customer Mgmt API",
@@ -712,6 +822,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "P3 Merchant Mgmt"
               }
             },
             "visible": true,
@@ -782,24 +895,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "d3631a9e-fdf4-4fda-b759-a99040413130"
+                  "id": "298d51f7-6a21-427b-b58e-d1ec72a824a1"
                 },
                 {
                   "group": "right",
-                  "id": "fae89474-364a-4289-b2b2-757c57546709"
+                  "id": "568a027c-b28b-474b-b9fa-59037466ab74"
                 },
                 {
                   "group": "bottom",
-                  "id": "35d1031b-ac4a-4674-9bf1-83e8d1481177"
+                  "id": "f1306542-f173-4978-8b6e-0ae990433a7b"
                 },
                 {
                   "group": "left",
-                  "id": "35617514-72c0-4a8e-919d-4825cc33dc95"
+                  "id": "1aa053e3-efac-4f93-8d5a-56e6224b728a"
                 }
               ]
             },
-            "id": "4edbf780-e1a3-4c19-9b2c-db4e024b1772",
+            "id": "6255fef0-74c5-4fbc-8513-eaa62aae8833",
             "zIndex": 1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Process",
               "name": "P3 Merchant Mgmt",
@@ -829,6 +949,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "P4 Core Banking/Ledger"
               }
             },
             "visible": true,
@@ -899,24 +1022,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "1f90ab87-7246-4202-b6f9-e5ea88cd7d25"
+                  "id": "4907abbe-3909-4c34-ae58-92e0b5a2933f"
                 },
                 {
                   "group": "right",
-                  "id": "adf2ab55-48f4-46cd-ba0b-57255d88b399"
+                  "id": "451cd087-083c-42f5-bf28-59f560b7c5d1"
                 },
                 {
                   "group": "bottom",
-                  "id": "cffd2b5d-19a5-4f61-bcbe-6bafd508fca8"
+                  "id": "5a30fda4-79e8-4168-8205-4283c01cd91f"
                 },
                 {
                   "group": "left",
-                  "id": "891fb793-e4f8-4d85-8c29-6e2310e28a53"
+                  "id": "b0c4feaa-c407-4785-85f6-7d3e688f2124"
                 }
               ]
             },
-            "id": "48b49ece-d846-4a24-952f-a65de06988d0",
+            "id": "6edaad57-a4c6-450f-bf6d-255cdeead03d",
             "zIndex": 1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Process",
               "name": "P4 Core Banking/Ledger",
@@ -946,6 +1076,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "P5 Admin-Frontend (2FA)"
               }
             },
             "visible": true,
@@ -1016,24 +1149,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "c61ce626-3560-4f4b-8f05-468ee0d19d1a"
+                  "id": "2482a64b-7a52-4111-8882-402d60087c9f"
                 },
                 {
                   "group": "right",
-                  "id": "71d0d383-1125-49ff-b5a2-b4c24dd00d0b"
+                  "id": "ac073883-4d39-4c86-802d-fadf8aae1301"
                 },
                 {
                   "group": "bottom",
-                  "id": "cfecdc66-6053-4686-aa02-158356d2944b"
+                  "id": "4ad8c01e-afc2-46e3-9cb2-c897192aa524"
                 },
                 {
                   "group": "left",
-                  "id": "22b615ad-b203-4e47-a152-8301dad718a1"
+                  "id": "9e437b05-a94d-4f04-a336-5d2d7b448d06"
                 }
               ]
             },
-            "id": "56e7bde1-42df-454f-be35-d8687391acfd",
+            "id": "131ce36c-56df-4bb5-b11f-e179b0084fd9",
             "zIndex": 1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Process",
               "name": "P5 Admin-Frontend (2FA)",
@@ -1066,6 +1206,9 @@
               "bottomLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "D1 Customer DB"
               }
             },
             "visible": true,
@@ -1136,24 +1279,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "6aebb080-6483-468d-83f4-8efa1813f755"
+                  "id": "11da18f1-c379-4716-b7e4-21098c22b273"
                 },
                 {
                   "group": "right",
-                  "id": "3067bfff-c6cc-4c02-8cff-ec3ff7c65f34"
+                  "id": "f8986441-b36c-4aa9-b932-e1c4c478d69b"
                 },
                 {
                   "group": "bottom",
-                  "id": "cd0ff640-ae32-40df-b970-5345093649fa"
+                  "id": "a960a1e7-0e12-4c14-9b3e-7389da89cf9d"
                 },
                 {
                   "group": "left",
-                  "id": "8181ca6b-2136-4e20-9c62-afc3de9b7914"
+                  "id": "8e276913-aea8-45ac-8327-82dc00b67bc4"
                 }
               ]
             },
-            "id": "25ff155f-930d-4d0f-80a5-dde44035ec3e",
+            "id": "6216928a-0b75-468f-b057-240bcad2a47d",
             "zIndex": 3,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Store",
               "name": "D1 Customer DB",
@@ -1187,6 +1337,9 @@
               "bottomLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "D2 Merchant DB"
               }
             },
             "visible": true,
@@ -1257,24 +1410,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "1c05902a-415e-4e94-b1bf-33df51555c4b"
+                  "id": "3b77e7ff-3480-4503-866f-463863ec7278"
                 },
                 {
                   "group": "right",
-                  "id": "8b73dace-3960-4bcf-be4a-39e6bc7d9f56"
+                  "id": "e0679991-1abb-4612-b5b8-1e1a7e839fd3"
                 },
                 {
                   "group": "bottom",
-                  "id": "7e78aee5-85a3-4a35-9a71-9999ff23bbaf"
+                  "id": "d4e89345-8456-4e70-82ba-abf6d4bafada"
                 },
                 {
                   "group": "left",
-                  "id": "7afb1249-2db2-446b-bf97-8ca65ccb6f0b"
+                  "id": "d5980f48-f3fe-4663-b1b5-1a16d3dd086c"
                 }
               ]
             },
-            "id": "d37dd2d7-fc37-4742-a165-7b9404969c75",
+            "id": "fd028134-5695-4e5b-a02c-0270c4818b19",
             "zIndex": 3,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Store",
               "name": "D2 Merchant DB",
@@ -1308,6 +1468,9 @@
               "bottomLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "D3 Ledger/Transactions"
               }
             },
             "visible": true,
@@ -1378,24 +1541,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "345d5347-1c42-451a-b4ce-72fa77e1c4c2"
+                  "id": "282bd32f-02fa-4ce2-aa6c-01974644921e"
                 },
                 {
                   "group": "right",
-                  "id": "6c39ccd3-f354-437f-9b49-0a93d007ae5f"
+                  "id": "499522bf-37d1-47dc-96df-37ba3db13c5c"
                 },
                 {
                   "group": "bottom",
-                  "id": "72a04eec-e6d3-432d-bd50-606a4a8002c5"
+                  "id": "9c220c96-7767-4207-8f0b-d43ee5368ac1"
                 },
                 {
                   "group": "left",
-                  "id": "ee3027fd-78f3-4a11-b03c-496059e12a4d"
+                  "id": "faf66d3d-ecc9-41e6-830c-2bba11810fc7"
                 }
               ]
             },
-            "id": "d01bae65-89c7-4aed-bfbe-a9b241de31c7",
+            "id": "9d344b86-5e84-4cc9-bf3a-553a94a2995a",
             "zIndex": 3,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Store",
               "name": "D3 Ledger/Transactions",
@@ -1429,6 +1599,9 @@
               "bottomLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "D4 Voucher/Gift DB"
               }
             },
             "visible": true,
@@ -1499,24 +1672,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "25509235-cd19-48eb-87a1-db4046ce09b4"
+                  "id": "c584178c-e6ef-412a-9403-4f9504ce300b"
                 },
                 {
                   "group": "right",
-                  "id": "e5d4cfa7-2ec4-4008-b955-74d7d3b5b78c"
+                  "id": "fc41090d-61a8-41f9-a398-d59fd8d65fa7"
                 },
                 {
                   "group": "bottom",
-                  "id": "d4f5399b-604c-4f7b-9463-7dcd64e0b41e"
+                  "id": "785a9543-6117-4f3a-829d-ce442146cc7d"
                 },
                 {
                   "group": "left",
-                  "id": "8986f282-be5b-45bb-8325-b877bf41f36e"
+                  "id": "ab865f53-5aa9-4e74-86f0-9c86b7957237"
                 }
               ]
             },
-            "id": "7f166616-481b-4fd0-9e0e-cf0e42387d87",
+            "id": "12697c4b-c632-4c1c-9387-83c937bc730d",
             "zIndex": 3,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Store",
               "name": "D4 Voucher/Gift DB",
@@ -1550,6 +1730,9 @@
               "bottomLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "D5 Token Vault"
               }
             },
             "visible": true,
@@ -1620,24 +1803,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "d7b53d3c-6a98-4733-9241-9b9824c43cbb"
+                  "id": "19f1376a-69dc-4df3-928f-87f06e7a49f8"
                 },
                 {
                   "group": "right",
-                  "id": "f042e5bf-f9fb-45bf-852b-e98d7afd13cd"
+                  "id": "97f8949b-7f6c-4629-b9ca-de45f1e58b6f"
                 },
                 {
                   "group": "bottom",
-                  "id": "e34a3f0b-87a6-4564-b3cd-9fc380d93aa2"
+                  "id": "755d8789-cbef-421a-bf9f-4531a8be17d1"
                 },
                 {
                   "group": "left",
-                  "id": "6eba3557-95b1-4a3a-bd06-cfdcf918bc7c"
+                  "id": "48d983ae-d4ac-43cc-b34f-80982c7c1f4d"
                 }
               ]
             },
-            "id": "186bc784-53f2-4ed6-bb04-f8177f8ba7cf",
+            "id": "5b8611c9-9ee4-4c1e-9d21-3e4a47a977a9",
             "zIndex": 3,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Store",
               "name": "D5 Token Vault",
@@ -1668,6 +1858,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "E4 Externe Bank"
               }
             },
             "visible": true,
@@ -1738,24 +1931,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "2372092e-1b1a-49a4-91a2-efa2c24fcabe"
+                  "id": "6e15957b-dd78-4a46-aecd-131aa25711a8"
                 },
                 {
                   "group": "right",
-                  "id": "07b53cd2-8062-4e6a-8556-3ba79e1826eb"
+                  "id": "7204662b-1e0c-445d-8d9f-3612c3cbe510"
                 },
                 {
                   "group": "bottom",
-                  "id": "6501f80b-eb1f-4bed-b769-7892a407af39"
+                  "id": "7df15d1e-6a0d-4d99-b04f-da1e771766ca"
                 },
                 {
                   "group": "left",
-                  "id": "6a1b24dd-1af5-42d0-b53a-de2b77aa5a12"
+                  "id": "4d97fe52-5f02-4c76-a91e-4119ed80011d"
                 }
               ]
             },
-            "id": "49b53a91-008f-4c93-9515-55c9941fb404",
+            "id": "c84ab5f5-b431-4158-b7dc-55e6e67ba189",
             "zIndex": 0,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Actor",
               "name": "E4 Externe Bank",
@@ -1782,6 +1982,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "E5 Kreditkartenanbieter"
               }
             },
             "visible": true,
@@ -1852,24 +2055,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "5f82d852-0b1d-4bee-a388-0fe3f62d02f9"
+                  "id": "fa6c1dc3-270c-4c0e-b585-e667e4be986e"
                 },
                 {
                   "group": "right",
-                  "id": "ffe0d52e-8c19-4821-906f-6638f49c23c0"
+                  "id": "48173494-1bde-4945-83c7-bc7781d15e65"
                 },
                 {
                   "group": "bottom",
-                  "id": "ec4cb92b-7363-4221-b1b8-cc2a39ec4e81"
+                  "id": "9c59584b-0527-46e4-af4a-d96b1260f8dd"
                 },
                 {
                   "group": "left",
-                  "id": "8b74e906-1c31-4f1d-a208-e82083161f04"
+                  "id": "a0b4f5f7-adaf-4554-a747-c6844aec9592"
                 }
               ]
             },
-            "id": "97901338-1120-4786-ba3d-71ded1a6e526",
+            "id": "660f4ee4-291f-4299-a808-726a582efcc6",
             "zIndex": 0,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Actor",
               "name": "E5 Kreditkartenanbieter",
@@ -1896,6 +2106,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "E6 App Store"
               }
             },
             "visible": true,
@@ -1966,24 +2179,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "d6ce3e64-720b-4a7c-85cb-2479dd6f78c2"
+                  "id": "4ab88c33-7034-4ea5-a335-df4c4d96e736"
                 },
                 {
                   "group": "right",
-                  "id": "b57662ca-5673-424e-8522-4720001ae44f"
+                  "id": "9beacd52-fa73-43f3-bf4c-b81dfeda6746"
                 },
                 {
                   "group": "bottom",
-                  "id": "28f5b763-c122-4d0c-9233-edd50904c89a"
+                  "id": "10cf318d-4835-4171-aeae-0cd439d67f5d"
                 },
                 {
                   "group": "left",
-                  "id": "02093103-a1e4-4f7f-9b23-4480d2b15cad"
+                  "id": "8be43130-2894-41c4-a3e6-fd0c7f7a1d42"
                 }
               ]
             },
-            "id": "30dc640f-f455-4340-8d31-5620f32e3739",
+            "id": "b33853ad-8e61-4513-a277-1124a5b7cc87",
             "zIndex": 0,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Actor",
               "name": "E6 App Store",
@@ -2010,6 +2230,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "E7 SMS/Push-Provider"
               }
             },
             "visible": true,
@@ -2080,24 +2303,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "9ca96b78-e047-4653-acd7-d8dca0761fdc"
+                  "id": "cbbff249-a4d4-4663-bce8-12fe40c88295"
                 },
                 {
                   "group": "right",
-                  "id": "e4333647-e20d-42e5-9589-245f28dbf862"
+                  "id": "61375e0e-cbd9-402c-8096-6d35a336de21"
                 },
                 {
                   "group": "bottom",
-                  "id": "185a045a-8b85-4f6e-949c-91c90187f822"
+                  "id": "5bec7734-58e6-4c17-8e3b-63b6d43ab743"
                 },
                 {
                   "group": "left",
-                  "id": "9e61bb04-7eac-48ae-9a28-d36208758b47"
+                  "id": "99ded47c-24da-4a1b-8714-3ef18aed0532"
                 }
               ]
             },
-            "id": "c5a7e082-1e95-4ac9-a8d5-c7aee001ca8e",
+            "id": "6162d92d-e049-4c4b-bde4-362de7dce143",
             "zIndex": 0,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Actor",
               "name": "E7 SMS/Push-Provider",
@@ -2122,6 +2352,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F0.1 Login/Payment/P2P/Top-Up"
               }
             },
             "width": 200,
@@ -2130,7 +2363,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F0.1 Login/Payment/P2P/To...",
+              "name": "F0.1 Login/Payment/P2P/Top-Up",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2143,18 +2376,24 @@
               "threats": []
             },
             "labels": [
-              "F0.1 Login/Payment/P2P/To..."
+              "F0.1 Login/Payment/P2P/Top-Up"
             ],
-            "id": "40874f32-f557-4572-82c2-eb2073bd5ba5",
+            "id": "4b49edbb-70b7-43e0-978c-7281dac2441f",
             "source": {
-              "cell": "6a42d993-458c-4471-96d5-1cf0add84153",
-              "port": "e670bb82-9bd0-4fde-a266-0aab59cffe8c"
+              "cell": "d5b7616c-25cc-4b14-88f9-f560e69e9ef4",
+              "port": "140a195d-1a03-495e-a358-5b2fae92702e"
             },
             "target": {
-              "cell": "212a50c4-6363-4027-9bdd-eaeeec1dfcbc",
-              "port": "4a2e11ed-e96c-42a1-9623-34c839604f4b"
+              "cell": "013a192c-2cff-44ab-a574-2cfdfefb568d",
+              "port": "eb55e7e5-cb99-4a20-9e83-92b980360609"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2168,6 +2407,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F0.3 Payment-Start NFC/QR/Code"
               }
             },
             "width": 200,
@@ -2176,7 +2418,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F0.3 Payment-Start NFC/QR...",
+              "name": "F0.3 Payment-Start NFC/QR/Code",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -2189,18 +2431,24 @@
               "threats": []
             },
             "labels": [
-              "F0.3 Payment-Start NFC/QR..."
+              "F0.3 Payment-Start NFC/QR/Code"
             ],
-            "id": "66461a33-946a-4275-84da-11190c21f084",
+            "id": "107d87ce-3555-4142-871f-c5dede7bae17",
             "source": {
-              "cell": "212a50c4-6363-4027-9bdd-eaeeec1dfcbc",
-              "port": "066deaeb-db9d-4d4b-a43f-97f999482866"
+              "cell": "013a192c-2cff-44ab-a574-2cfdfefb568d",
+              "port": "589bc3ea-08a5-4995-934e-ff677cf88150"
             },
             "target": {
-              "cell": "424deba8-b9a0-4bd8-9dd9-c203b49e8b01",
-              "port": "302c86a4-0925-421d-bb4f-1e5a1c9df9de"
+              "cell": "247f683d-956d-4e42-a67c-d49b3339d453",
+              "port": "31adf27e-2fe0-45d3-a2e9-10d3d18d79de"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2214,6 +2462,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F0.2 API Calls (TLS/mTLS)"
               }
             },
             "width": 200,
@@ -2237,16 +2488,22 @@
             "labels": [
               "F0.2 API Calls (TLS/mTLS)"
             ],
-            "id": "8ce38e40-16b8-4930-bc77-c6677960b701",
+            "id": "580cd06f-2f73-4622-b2d5-2950a0fe4d66",
             "source": {
-              "cell": "212a50c4-6363-4027-9bdd-eaeeec1dfcbc",
-              "port": "ad05b877-bf7e-48c7-9dbd-4d374d0f8aa4"
+              "cell": "013a192c-2cff-44ab-a574-2cfdfefb568d",
+              "port": "d469c253-a20b-40b6-a4ed-0add5960b93b"
             },
             "target": {
-              "cell": "a1f0e1a5-4b10-41a2-9ea2-9f84f08c7efb",
-              "port": "58d2f913-ff5a-451c-b52f-09d3e1816a21"
+              "cell": "bf749475-a0fe-4bf7-b229-e51454e973fa",
+              "port": "c50dc6ae-d2d0-4613-8fcd-8f2d87571d20"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2260,6 +2517,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F0.2b Auth-Request"
               }
             },
             "width": 200,
@@ -2283,16 +2543,22 @@
             "labels": [
               "F0.2b Auth-Request"
             ],
-            "id": "cbe3fe55-06ad-4670-a195-9e1766b918ca",
+            "id": "547599b0-32e2-4d97-a61c-6c3687518c1a",
             "source": {
-              "cell": "424deba8-b9a0-4bd8-9dd9-c203b49e8b01",
-              "port": "302c86a4-0925-421d-bb4f-1e5a1c9df9de"
+              "cell": "247f683d-956d-4e42-a67c-d49b3339d453",
+              "port": "31adf27e-2fe0-45d3-a2e9-10d3d18d79de"
             },
             "target": {
-              "cell": "a1f0e1a5-4b10-41a2-9ea2-9f84f08c7efb",
-              "port": "afe5fbec-b207-40da-a6ae-be9fac268ff2"
+              "cell": "bf749475-a0fe-4bf7-b229-e51454e973fa",
+              "port": "b6439c12-610d-4149-a464-2eac2c3dac29"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2306,6 +2572,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F0.2c Authorize/Reserve"
               }
             },
             "width": 200,
@@ -2329,16 +2598,22 @@
             "labels": [
               "F0.2c Authorize/Reserve"
             ],
-            "id": "ca905a1b-f0f9-46e7-ac2c-9af5c5ac8021",
+            "id": "73a28f8f-1cf1-4357-804b-bc5b67106151",
             "source": {
-              "cell": "a1f0e1a5-4b10-41a2-9ea2-9f84f08c7efb",
-              "port": "afe5fbec-b207-40da-a6ae-be9fac268ff2"
+              "cell": "bf749475-a0fe-4bf7-b229-e51454e973fa",
+              "port": "b6439c12-610d-4149-a464-2eac2c3dac29"
             },
             "target": {
-              "cell": "48b49ece-d846-4a24-952f-a65de06988d0",
-              "port": "891fb793-e4f8-4d85-8c29-6e2310e28a53"
+              "cell": "6edaad57-a4c6-450f-bf6d-255cdeead03d",
+              "port": "b0c4feaa-c407-4785-85f6-7d3e688f2124"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2352,6 +2627,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F0.4 Bank Clearing/SEPA"
               }
             },
             "width": 200,
@@ -2375,16 +2653,22 @@
             "labels": [
               "F0.4 Bank Clearing/SEPA"
             ],
-            "id": "9f8cd3b1-ea0f-487f-8680-c3290299a041",
+            "id": "29183936-e0e4-46d2-80b1-9f4b6d022f79",
             "source": {
-              "cell": "48b49ece-d846-4a24-952f-a65de06988d0",
-              "port": "adf2ab55-48f4-46cd-ba0b-57255d88b399"
+              "cell": "6edaad57-a4c6-450f-bf6d-255cdeead03d",
+              "port": "451cd087-083c-42f5-bf28-59f560b7c5d1"
             },
             "target": {
-              "cell": "49b53a91-008f-4c93-9515-55c9941fb404",
-              "port": "6a1b24dd-1af5-42d0-b53a-de2b77aa5a12"
+              "cell": "c84ab5f5-b431-4158-b7dc-55e6e67ba189",
+              "port": "4d97fe52-5f02-4c76-a91e-4119ed80011d"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2398,6 +2682,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F0.4b Card Auth/Settlement"
               }
             },
             "width": 200,
@@ -2421,16 +2708,22 @@
             "labels": [
               "F0.4b Card Auth/Settlement"
             ],
-            "id": "bf129fe6-2ac0-4aa7-8e97-d25cdc105bec",
+            "id": "d5cc1aad-6d51-4465-9583-9237c3a8c9a7",
             "source": {
-              "cell": "48b49ece-d846-4a24-952f-a65de06988d0",
-              "port": "adf2ab55-48f4-46cd-ba0b-57255d88b399"
+              "cell": "6edaad57-a4c6-450f-bf6d-255cdeead03d",
+              "port": "451cd087-083c-42f5-bf28-59f560b7c5d1"
             },
             "target": {
-              "cell": "97901338-1120-4786-ba3d-71ded1a6e526",
-              "port": "8b74e906-1c31-4f1d-a208-e82083161f04"
+              "cell": "660f4ee4-291f-4299-a808-726a582efcc6",
+              "port": "a0b4f5f7-adaf-4554-a747-c6844aec9592"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2444,6 +2737,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F0.5 Merchant Admin (2FA)"
               }
             },
             "width": 200,
@@ -2467,16 +2763,22 @@
             "labels": [
               "F0.5 Merchant Admin (2FA)"
             ],
-            "id": "59fc8149-c438-420f-8da2-32f1f23a5dc5",
+            "id": "38199a69-402e-490a-a726-88a5d30f61db",
             "source": {
-              "cell": "a1f0e1a5-4b10-41a2-9ea2-9f84f08c7efb",
-              "port": "afe5fbec-b207-40da-a6ae-be9fac268ff2"
+              "cell": "bf749475-a0fe-4bf7-b229-e51454e973fa",
+              "port": "b6439c12-610d-4149-a464-2eac2c3dac29"
             },
             "target": {
-              "cell": "56e7bde1-42df-454f-be35-d8687391acfd",
-              "port": "22b615ad-b203-4e47-a152-8301dad718a1"
+              "cell": "131ce36c-56df-4bb5-b11f-e179b0084fd9",
+              "port": "9e437b05-a94d-4f04-a336-5d2d7b448d06"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2490,6 +2792,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F0.6 OTP/Push"
               }
             },
             "width": 200,
@@ -2513,16 +2818,22 @@
             "labels": [
               "F0.6 OTP/Push"
             ],
-            "id": "c45d9b8c-1932-4208-9984-ba2098e56c98",
+            "id": "7a00181a-ff24-47a0-a945-1e59ecb6321b",
             "source": {
-              "cell": "a1f0e1a5-4b10-41a2-9ea2-9f84f08c7efb",
-              "port": "afe5fbec-b207-40da-a6ae-be9fac268ff2"
+              "cell": "bf749475-a0fe-4bf7-b229-e51454e973fa",
+              "port": "b6439c12-610d-4149-a464-2eac2c3dac29"
             },
             "target": {
-              "cell": "c5a7e082-1e95-4ac9-a8d5-c7aee001ca8e",
-              "port": "9e61bb04-7eac-48ae-9a28-d36208758b47"
+              "cell": "6162d92d-e049-4c4b-bde4-362de7dce143",
+              "port": "99ded47c-24da-4a1b-8714-3ef18aed0532"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2536,6 +2847,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F0.7 App Download/Update"
               }
             },
             "width": 200,
@@ -2559,16 +2873,22 @@
             "labels": [
               "F0.7 App Download/Update"
             ],
-            "id": "5f31c295-8869-46ab-b356-3e20abb30de0",
+            "id": "5c6f7de7-556b-4f4d-8ae7-48e4709b14fa",
             "source": {
-              "cell": "212a50c4-6363-4027-9bdd-eaeeec1dfcbc",
-              "port": "066deaeb-db9d-4d4b-a43f-97f999482866"
+              "cell": "013a192c-2cff-44ab-a574-2cfdfefb568d",
+              "port": "589bc3ea-08a5-4995-934e-ff677cf88150"
             },
             "target": {
-              "cell": "30dc640f-f455-4340-8d31-5620f32e3739",
-              "port": "02093103-a1e4-4f7f-9b23-4480d2b15cad"
+              "cell": "b33853ad-8e61-4513-a277-1124a5b7cc87",
+              "port": "8be43130-2894-41c4-a3e6-fd0c7f7a1d42"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2582,6 +2902,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "Status/Kundenpflege"
               }
             },
             "width": 200,
@@ -2605,16 +2928,22 @@
             "labels": [
               "Status/Kundenpflege"
             ],
-            "id": "a6f15933-9fe2-4327-ada7-5fac311986f9",
+            "id": "eef32708-6c0c-4abd-9771-1d5f699c4968",
             "source": {
-              "cell": "a1f0e1a5-4b10-41a2-9ea2-9f84f08c7efb",
-              "port": "497926c4-809a-428c-8115-802d4fe4ea3a"
+              "cell": "bf749475-a0fe-4bf7-b229-e51454e973fa",
+              "port": "f9865857-ecbf-48cc-bfd6-a8e3292832d2"
             },
             "target": {
-              "cell": "25ff155f-930d-4d0f-80a5-dde44035ec3e",
-              "port": "6aebb080-6483-468d-83f4-8efa1813f755"
+              "cell": "6216928a-0b75-468f-b057-240bcad2a47d",
+              "port": "11da18f1-c379-4716-b7e4-21098c22b273"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2628,6 +2957,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "Händlerpflege"
               }
             },
             "width": 200,
@@ -2651,16 +2983,22 @@
             "labels": [
               "Händlerpflege"
             ],
-            "id": "953109a3-c837-4397-ada7-2435268d70bd",
+            "id": "7f009e17-8ece-43ca-a575-2bd94495bc6f",
             "source": {
-              "cell": "4edbf780-e1a3-4c19-9b2c-db4e024b1772",
-              "port": "35d1031b-ac4a-4674-9bf1-83e8d1481177"
+              "cell": "6255fef0-74c5-4fbc-8513-eaa62aae8833",
+              "port": "f1306542-f173-4978-8b6e-0ae990433a7b"
             },
             "target": {
-              "cell": "d37dd2d7-fc37-4742-a165-7b9404969c75",
-              "port": "1c05902a-415e-4e94-b1bf-33df51555c4b"
+              "cell": "fd028134-5695-4e5b-a02c-0270c4818b19",
+              "port": "3b77e7ff-3480-4503-866f-463863ec7278"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2674,6 +3012,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "Buchungen/Audit"
               }
             },
             "width": 200,
@@ -2697,16 +3038,22 @@
             "labels": [
               "Buchungen/Audit"
             ],
-            "id": "a5e2a3a3-c5b5-4d59-b064-2545777d004a",
+            "id": "98e6e5d6-252d-4e21-abd9-41f0d2f73ee1",
             "source": {
-              "cell": "48b49ece-d846-4a24-952f-a65de06988d0",
-              "port": "cffd2b5d-19a5-4f61-bcbe-6bafd508fca8"
+              "cell": "6edaad57-a4c6-450f-bf6d-255cdeead03d",
+              "port": "5a30fda4-79e8-4168-8205-4283c01cd91f"
             },
             "target": {
-              "cell": "d01bae65-89c7-4aed-bfbe-a9b241de31c7",
-              "port": "345d5347-1c42-451a-b4ce-72fa77e1c4c2"
+              "cell": "9d344b86-5e84-4cc9-bf3a-553a94a2995a",
+              "port": "282bd32f-02fa-4ce2-aa6c-01974644921e"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2720,6 +3067,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "Voucher redeem/validate"
               }
             },
             "width": 200,
@@ -2743,16 +3093,22 @@
             "labels": [
               "Voucher redeem/validate"
             ],
-            "id": "738af8f3-ec41-44da-8c09-b69e99a5f314",
+            "id": "c339cd4b-8299-4553-993d-7131a5dc0dde",
             "source": {
-              "cell": "a1f0e1a5-4b10-41a2-9ea2-9f84f08c7efb",
-              "port": "497926c4-809a-428c-8115-802d4fe4ea3a"
+              "cell": "bf749475-a0fe-4bf7-b229-e51454e973fa",
+              "port": "f9865857-ecbf-48cc-bfd6-a8e3292832d2"
             },
             "target": {
-              "cell": "7f166616-481b-4fd0-9e0e-cf0e42387d87",
-              "port": "25509235-cd19-48eb-87a1-db4046ce09b4"
+              "cell": "12697c4b-c632-4c1c-9387-83c937bc730d",
+              "port": "c584178c-e6ef-412a-9403-4f9504ce300b"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2766,6 +3122,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "Tokenpflege"
               }
             },
             "width": 200,
@@ -2789,16 +3148,22 @@
             "labels": [
               "Tokenpflege"
             ],
-            "id": "0851b06a-7ba7-4e37-b828-cac1bdcfe7af",
+            "id": "a1d77dd6-3bde-4dfb-bccf-9478325397da",
             "source": {
-              "cell": "a1f0e1a5-4b10-41a2-9ea2-9f84f08c7efb",
-              "port": "497926c4-809a-428c-8115-802d4fe4ea3a"
+              "cell": "bf749475-a0fe-4bf7-b229-e51454e973fa",
+              "port": "f9865857-ecbf-48cc-bfd6-a8e3292832d2"
             },
             "target": {
-              "cell": "186bc784-53f2-4ed6-bb04-f8177f8ba7cf",
-              "port": "d7b53d3c-6a98-4733-9241-9b9824c43cbb"
+              "cell": "5b8611c9-9ee4-4c1e-9d21-3e4a47a977a9",
+              "port": "19f1376a-69dc-4df3-928f-87f06e7a49f8"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -2812,6 +3177,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F0.3b Webshop Session/Status"
               }
             },
             "width": 200,
@@ -2835,16 +3203,22 @@
             "labels": [
               "F0.3b Webshop Session/Status"
             ],
-            "id": "0706fc66-f1ef-4303-bbf9-1ffec5bd3a11",
+            "id": "224b31c0-dfc2-4cee-b797-9cbce1724086",
             "source": {
-              "cell": "a1f0e1a5-4b10-41a2-9ea2-9f84f08c7efb",
-              "port": "afe5fbec-b207-40da-a6ae-be9fac268ff2"
+              "cell": "bf749475-a0fe-4bf7-b229-e51454e973fa",
+              "port": "b6439c12-610d-4149-a464-2eac2c3dac29"
             },
             "target": {
-              "cell": "b731d19a-8b6d-469f-a603-ea32bdcca5db",
-              "port": "61a673e1-7ede-424e-9b39-201f6c6ccaa8"
+              "cell": "ea6bceb2-7c9b-412d-9cdd-ce3a4a8b16d4",
+              "port": "8b64c6bb-5180-4c17-8247-aa9d08f745c0"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           }
         ],
         "description": ""
@@ -2868,8 +3242,20 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "1d5e2c9f-6a26-484a-a356-fe9d5715bdf9",
+            "id": "a93a4176-f14b-42ea-b11d-1fc228ee66a4",
             "zIndex": -1,
+            "attrs": {
+              "text": {
+                "text": "TB1 – Kunden-Gerät"
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB1 – Kunden-Gerät",
@@ -2889,8 +3275,20 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "289685d5-4e25-44bc-bf7a-0d2d25a0c3cc",
+            "id": "e23369fb-fbf3-48bb-91dc-dcc1efcd3225",
             "zIndex": -1,
+            "attrs": {
+              "text": {
+                "text": "TB3 – Merchant-Umfeld"
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB3 – Merchant-Umfeld",
@@ -2910,11 +3308,23 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "44298df7-4916-4b3e-9ef7-dabcfd064165",
+            "id": "017cb4d4-1824-4d0b-a5ae-3d62bef98001",
             "zIndex": -1,
+            "attrs": {
+              "text": {
+                "text": "TB4 – Anbieter-Backend (intern)"
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "TB4 – Anbieter-Backend (i...",
+              "name": "TB4 – Anbieter-Backend (intern)",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -2931,8 +3341,20 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "29c9bb98-1739-4fab-a3ca-790e1b475e2d",
+            "id": "602d73bd-d57a-4e6c-9368-c6f413ac1b47",
             "zIndex": -1,
+            "attrs": {
+              "text": {
+                "text": "TB5 – Externe Dritte"
+              }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.BoundaryBox",
               "name": "TB5 – Externe Dritte",
@@ -2955,6 +3377,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "P1 Mobile App"
               }
             },
             "visible": true,
@@ -3025,24 +3450,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "135e6fd4-78d0-46ff-944f-b6592aa2bd63"
+                  "id": "a0d80111-06c0-49d6-b165-753bda27f598"
                 },
                 {
                   "group": "right",
-                  "id": "b379d944-f8ac-4e0d-9b07-b61888fbff58"
+                  "id": "94ed4caf-6336-438c-9b57-eb87f71700e3"
                 },
                 {
                   "group": "bottom",
-                  "id": "53224751-d862-4404-a8da-0021da9dee75"
+                  "id": "6bbd37e9-f042-4bab-83f9-efe4f3474026"
                 },
                 {
                   "group": "left",
-                  "id": "b70962c2-9d15-4fd6-b620-8ecb47a2475c"
+                  "id": "9d9ceb6b-2373-46fa-99f6-bc69ac6f9819"
                 }
               ]
             },
-            "id": "c4b42f54-f64c-4328-ad9c-f4c005c641fb",
+            "id": "8cab87d3-f56e-4097-9316-0999378e7754",
             "zIndex": 1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Process",
               "name": "P1 Mobile App",
@@ -3072,6 +3504,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "E2 PoS/Kassensystem"
               }
             },
             "visible": true,
@@ -3142,24 +3577,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "88e4a6be-33a3-4fb4-b597-04f92425e005"
+                  "id": "07a6f1fb-22c5-4e37-8743-edac9e1f5500"
                 },
                 {
                   "group": "right",
-                  "id": "ffff3dd6-4a2e-4790-acad-d89a48c06249"
+                  "id": "a8bbfc5e-95b5-442b-8a92-267b7a3e6a44"
                 },
                 {
                   "group": "bottom",
-                  "id": "e820c70d-0e66-4dbd-ad3b-c38341f4dec1"
+                  "id": "8d502e60-b36e-4f20-9c1d-83ee76c827b9"
                 },
                 {
                   "group": "left",
-                  "id": "897ec2ea-06ed-4f43-839b-b18fc04e1618"
+                  "id": "76d1d95a-f1a7-4f38-9736-a6ee190cff8d"
                 }
               ]
             },
-            "id": "6b37913e-4ba6-40c5-8655-18a5c286b465",
+            "id": "f2795bf0-af53-44be-94dd-24f1e64d0b2b",
             "zIndex": 0,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Actor",
               "name": "E2 PoS/Kassensystem",
@@ -3186,6 +3628,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "P2 Customer Mgmt API"
               }
             },
             "visible": true,
@@ -3256,24 +3701,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "f6e0d832-ff00-4856-bb71-2887e5ccdaac"
+                  "id": "a236e3e3-56b6-4691-a04a-67b7735660db"
                 },
                 {
                   "group": "right",
-                  "id": "7450aaa0-bcc8-4ee3-a502-ec21a3e13ac3"
+                  "id": "74f18d43-f71c-4d8d-96ea-7b29ea04d1f2"
                 },
                 {
                   "group": "bottom",
-                  "id": "b6e83246-70b8-42b2-b43a-26e8a720a4f3"
+                  "id": "e8767574-98f7-4ea1-a7c6-76f3ba638278"
                 },
                 {
                   "group": "left",
-                  "id": "45b69926-b2f0-4653-b78a-fee1eaeb7107"
+                  "id": "f06e2798-eda0-4761-bfbd-afadc7517eb8"
                 }
               ]
             },
-            "id": "d38a796c-a025-4bc6-8756-ea0ed52664c1",
+            "id": "c922fe7d-938a-419b-b42f-90d6f6e223e3",
             "zIndex": 1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Process",
               "name": "P2 Customer Mgmt API",
@@ -3303,6 +3755,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "P4 Core Banking/Ledger"
               }
             },
             "visible": true,
@@ -3373,24 +3828,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "6ac91529-cf57-4f77-a8d3-bf59f0030cb2"
+                  "id": "364afd94-4628-497a-980b-6291bc36afb5"
                 },
                 {
                   "group": "right",
-                  "id": "b85e4f40-73a3-4026-a392-216546dafa74"
+                  "id": "d4f6c4ae-b795-4021-9c97-929b6dd6c28c"
                 },
                 {
                   "group": "bottom",
-                  "id": "7f8c75eb-7a72-4258-9a5b-1bf2fb35baf2"
+                  "id": "4db593a8-3817-46ba-a72b-e97e1eca5799"
                 },
                 {
                   "group": "left",
-                  "id": "630c9687-b309-4078-8737-cf7170e8471d"
+                  "id": "4b2a04ca-5e65-49d2-9027-21e77508d687"
                 }
               ]
             },
-            "id": "bd9bd4a4-a2b7-4374-a7dd-f6c61a0d1930",
+            "id": "5aa34137-95f8-4774-8e4a-406948b88292",
             "zIndex": 1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Process",
               "name": "P4 Core Banking/Ledger",
@@ -3423,6 +3885,9 @@
               "bottomLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "D3 Ledger/Transactions"
               }
             },
             "visible": true,
@@ -3493,24 +3958,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "3d595165-2ea7-478a-8369-b79dd8d5b71d"
+                  "id": "8f117d05-bff1-4597-ae6b-600aad9c504b"
                 },
                 {
                   "group": "right",
-                  "id": "38c3f036-f5a5-4998-8b58-192dfbfbc03a"
+                  "id": "1b585247-c31e-4747-8645-459e7d53f4e0"
                 },
                 {
                   "group": "bottom",
-                  "id": "65c327b4-dd48-45c7-b8f9-6ea281378416"
+                  "id": "b3f0169d-ec57-4e03-b133-95812ff2dd68"
                 },
                 {
                   "group": "left",
-                  "id": "1bc454b5-306d-4916-832b-da3014fea1fb"
+                  "id": "0fa8e19b-4c3a-4d36-ae38-3180d5a078c2"
                 }
               ]
             },
-            "id": "dbec6aaa-4362-495b-ba3f-c664928ad564",
+            "id": "9fe1d9ac-9444-4ce4-8bd9-7e30d32b0b0d",
             "zIndex": 3,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Store",
               "name": "D3 Ledger/Transactions",
@@ -3544,6 +4016,9 @@
               "bottomLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "D1 Customer DB"
               }
             },
             "visible": true,
@@ -3614,24 +4089,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "00be6fa0-5b4b-49ba-b45c-d15b80d45e11"
+                  "id": "8a7839c5-4941-4b9f-83fd-fca274b96064"
                 },
                 {
                   "group": "right",
-                  "id": "42d4df40-8bb2-44b6-9311-e4ca187a9019"
+                  "id": "f4c65c39-31ea-4f39-8edb-c1c6bb053c42"
                 },
                 {
                   "group": "bottom",
-                  "id": "443d5f1b-e63c-4f74-84ce-a525b4f7fac4"
+                  "id": "e9ec7a47-3641-4942-9f69-43950b482c98"
                 },
                 {
                   "group": "left",
-                  "id": "e1fbc93d-ec67-4b1d-9f34-6c59fce2182f"
+                  "id": "2fedd707-138e-46ad-911c-c0f55db27c8f"
                 }
               ]
             },
-            "id": "e1737a4b-974b-4a99-9bbc-52f896390eaf",
+            "id": "4a6b7cb9-869b-4f86-9ad6-3825f0505e45",
             "zIndex": 3,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Store",
               "name": "D1 Customer DB",
@@ -3665,6 +4147,9 @@
               "bottomLine": {
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "D5 Token Vault"
               }
             },
             "visible": true,
@@ -3735,24 +4220,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "a333474b-5d77-4f46-816b-14442ce9a132"
+                  "id": "1d2055ac-bcde-450c-b4f8-e2b5e86e5ea5"
                 },
                 {
                   "group": "right",
-                  "id": "627ad086-2545-4e70-ae52-58195ba288e7"
+                  "id": "6fc5b4af-1718-4efc-8c8a-1a52f555a8e0"
                 },
                 {
                   "group": "bottom",
-                  "id": "891fb682-fed2-4460-ae05-72d1ee7ceec8"
+                  "id": "be8dd41d-f8ef-4dd1-8ded-b15f35bb301a"
                 },
                 {
                   "group": "left",
-                  "id": "2ad19c6e-92c1-4c03-86cf-1cbf55341682"
+                  "id": "9617a36b-4a13-4497-b27d-511087c916f6"
                 }
               ]
             },
-            "id": "e882efd6-267e-49c4-8305-2f61adc72b00",
+            "id": "2548c64f-d171-47c0-88e6-3baa45cdab95",
             "zIndex": 3,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Store",
               "name": "D5 Token Vault",
@@ -3783,6 +4275,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "E4 Bank"
               }
             },
             "visible": true,
@@ -3853,24 +4348,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "283e4609-ba95-40ee-be95-0e0e8797226b"
+                  "id": "2bbecba6-ad01-4145-9e9d-0c91caed87d6"
                 },
                 {
                   "group": "right",
-                  "id": "2e042f8e-c57f-4339-9753-fdc3b6ba5e75"
+                  "id": "e9aabee0-a579-4e0f-9948-b5d7bb4960f0"
                 },
                 {
                   "group": "bottom",
-                  "id": "56224ba1-de01-4839-a021-a6ae8afc3af9"
+                  "id": "ea6c4592-08ce-4dbf-b4be-dd39dc7f8c77"
                 },
                 {
                   "group": "left",
-                  "id": "1a23cef3-69f1-47d8-94a8-ae1169b17610"
+                  "id": "28d7411e-6a7e-4f8d-a0b0-573188b42902"
                 }
               ]
             },
-            "id": "87cfc62a-b87f-4f9d-acb3-3d3994814f09",
+            "id": "d16c5e22-6577-44f3-93f5-24e2fb81ccf3",
             "zIndex": 0,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Actor",
               "name": "E4 Bank",
@@ -3897,6 +4399,9 @@
                 "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "E5 Karten-Netz"
               }
             },
             "visible": true,
@@ -3967,24 +4472,31 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "8f68e53a-49c2-408e-896a-40c8c85dd5ba"
+                  "id": "22034882-4ea5-4d6b-9991-995fca6c75fb"
                 },
                 {
                   "group": "right",
-                  "id": "46a5a74d-ee4d-49ed-a276-84b910c31606"
+                  "id": "6ca1f2e8-9701-4ca7-baba-a54b8bd353c5"
                 },
                 {
                   "group": "bottom",
-                  "id": "a35c6d58-f65e-4339-81ba-28bba019c599"
+                  "id": "d49c9bb4-481c-452c-8b78-0a6918f27fa6"
                 },
                 {
                   "group": "left",
-                  "id": "42260f83-b51b-458f-9dd3-16a7540fbedd"
+                  "id": "4a0f0aaf-1b53-4e81-aa97-010fe8ed46f0"
                 }
               ]
             },
-            "id": "0bf29917-befb-4b31-92d8-5d05a94d92e5",
+            "id": "b51201af-eeaf-4182-a8dc-6b38bcee02ba",
             "zIndex": 0,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
             "data": {
               "type": "tm.Actor",
               "name": "E5 Karten-Netz",
@@ -4009,6 +4521,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F1.1 Payment Request {amount, merchantId, ts,..."
               }
             },
             "width": 200,
@@ -4017,7 +4532,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F1.1 Payment Request {amo...",
+              "name": "F1.1 Payment Request {amount, merchantId, ts,...",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4030,18 +4545,24 @@
               "threats": []
             },
             "labels": [
-              "F1.1 Payment Request {amo..."
+              "F1.1 Payment Request {amount, merchantId, ts,..."
             ],
-            "id": "14345654-b4d2-445e-b82c-d5e5aea13f8a",
+            "id": "11355ad1-e3d0-4bdb-9571-88d9340f7101",
             "source": {
-              "cell": "c4b42f54-f64c-4328-ad9c-f4c005c641fb",
-              "port": "b379d944-f8ac-4e0d-9b07-b61888fbff58"
+              "cell": "8cab87d3-f56e-4097-9316-0999378e7754",
+              "port": "94ed4caf-6336-438c-9b57-eb87f71700e3"
             },
             "target": {
-              "cell": "6b37913e-4ba6-40c5-8655-18a5c286b465",
-              "port": "897ec2ea-06ed-4f43-839b-b18fc04e1618"
+              "cell": "f2795bf0-af53-44be-94dd-24f1e64d0b2b",
+              "port": "76d1d95a-f1a7-4f38-9736-a6ee190cff8d"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -4055,6 +4576,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F1.2 Authorization Request {terminalId, amoun..."
               }
             },
             "width": 200,
@@ -4063,7 +4587,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F1.2 Authorization Reques...",
+              "name": "F1.2 Authorization Request {terminalId, amoun...",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4076,18 +4600,24 @@
               "threats": []
             },
             "labels": [
-              "F1.2 Authorization Reques..."
+              "F1.2 Authorization Request {terminalId, amoun..."
             ],
-            "id": "93702d2e-c742-424e-86eb-7d057afe67a6",
+            "id": "cb7d4a8c-ff14-407c-ab91-ccc196b9fadc",
             "source": {
-              "cell": "6b37913e-4ba6-40c5-8655-18a5c286b465",
-              "port": "897ec2ea-06ed-4f43-839b-b18fc04e1618"
+              "cell": "f2795bf0-af53-44be-94dd-24f1e64d0b2b",
+              "port": "76d1d95a-f1a7-4f38-9736-a6ee190cff8d"
             },
             "target": {
-              "cell": "d38a796c-a025-4bc6-8756-ea0ed52664c1",
-              "port": "7450aaa0-bcc8-4ee3-a502-ec21a3e13ac3"
+              "cell": "c922fe7d-938a-419b-b42f-90d6f6e223e3",
+              "port": "74f18d43-f71c-4d8d-96ea-7b29ea04d1f2"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -4101,6 +4631,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F1.3 Authorize & Reserve {customerToken, amount}"
               }
             },
             "width": 200,
@@ -4109,7 +4642,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F1.3 Authorize & Reserve ...",
+              "name": "F1.3 Authorize & Reserve {customerToken, amount}",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4122,18 +4655,24 @@
               "threats": []
             },
             "labels": [
-              "F1.3 Authorize & Reserve ..."
+              "F1.3 Authorize & Reserve {customerToken, amount}"
             ],
-            "id": "b0f4936d-4de0-4bfd-b5c1-757f1ec28ea3",
+            "id": "c64221d5-fe30-4710-9c40-7d8c658cbeb4",
             "source": {
-              "cell": "d38a796c-a025-4bc6-8756-ea0ed52664c1",
-              "port": "7450aaa0-bcc8-4ee3-a502-ec21a3e13ac3"
+              "cell": "c922fe7d-938a-419b-b42f-90d6f6e223e3",
+              "port": "74f18d43-f71c-4d8d-96ea-7b29ea04d1f2"
             },
             "target": {
-              "cell": "bd9bd4a4-a2b7-4374-a7dd-f6c61a0d1930",
-              "port": "630c9687-b309-4078-8737-cf7170e8471d"
+              "cell": "5aa34137-95f8-4774-8e4a-406948b88292",
+              "port": "4b2a04ca-5e65-49d2-9027-21e77508d687"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -4147,6 +4686,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F1.4 Bank Debit/Authorization"
               }
             },
             "width": 200,
@@ -4155,7 +4697,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F1.4 Bank Debit/Authoriza...",
+              "name": "F1.4 Bank Debit/Authorization",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4168,18 +4710,24 @@
               "threats": []
             },
             "labels": [
-              "F1.4 Bank Debit/Authoriza..."
+              "F1.4 Bank Debit/Authorization"
             ],
-            "id": "e0fbe1f1-5f86-4022-a925-41f314c9a19d",
+            "id": "413a5ac1-1813-4579-861f-1adfb69d5fa4",
             "source": {
-              "cell": "bd9bd4a4-a2b7-4374-a7dd-f6c61a0d1930",
-              "port": "b85e4f40-73a3-4026-a392-216546dafa74"
+              "cell": "5aa34137-95f8-4774-8e4a-406948b88292",
+              "port": "d4f6c4ae-b795-4021-9c97-929b6dd6c28c"
             },
             "target": {
-              "cell": "87cfc62a-b87f-4f9d-acb3-3d3994814f09",
-              "port": "1a23cef3-69f1-47d8-94a8-ae1169b17610"
+              "cell": "d16c5e22-6577-44f3-93f5-24e2fb81ccf3",
+              "port": "28d7411e-6a7e-4f8d-a0b0-573188b42902"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -4193,6 +4741,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F1.4b Card Authorization"
               }
             },
             "width": 200,
@@ -4216,16 +4767,22 @@
             "labels": [
               "F1.4b Card Authorization"
             ],
-            "id": "ace88aae-4a23-469f-8ec0-e9686ad6029f",
+            "id": "a39373c5-a2dc-4059-868b-ae9b0ddc7c50",
             "source": {
-              "cell": "bd9bd4a4-a2b7-4374-a7dd-f6c61a0d1930",
-              "port": "b85e4f40-73a3-4026-a392-216546dafa74"
+              "cell": "5aa34137-95f8-4774-8e4a-406948b88292",
+              "port": "d4f6c4ae-b795-4021-9c97-929b6dd6c28c"
             },
             "target": {
-              "cell": "0bf29917-befb-4b31-92d8-5d05a94d92e5",
-              "port": "42260f83-b51b-458f-9dd3-16a7540fbedd"
+              "cell": "b51201af-eeaf-4182-a8dc-6b38bcee02ba",
+              "port": "4a0f0aaf-1b53-4e81-aa97-010fe8ed46f0"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -4239,6 +4796,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F1.5 Auth-Result {approved/declined, code}"
               }
             },
             "width": 200,
@@ -4247,7 +4807,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F1.5 Auth-Result {approve...",
+              "name": "F1.5 Auth-Result {approved/declined, code}",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4260,18 +4820,24 @@
               "threats": []
             },
             "labels": [
-              "F1.5 Auth-Result {approve..."
+              "F1.5 Auth-Result {approved/declined, code}"
             ],
-            "id": "91191038-1fb3-4a7e-9dcc-7f74063d99e1",
+            "id": "6e7fb22c-ff95-4ce1-b6ce-05a40cc43d36",
             "source": {
-              "cell": "bd9bd4a4-a2b7-4374-a7dd-f6c61a0d1930",
-              "port": "630c9687-b309-4078-8737-cf7170e8471d"
+              "cell": "5aa34137-95f8-4774-8e4a-406948b88292",
+              "port": "4b2a04ca-5e65-49d2-9027-21e77508d687"
             },
             "target": {
-              "cell": "d38a796c-a025-4bc6-8756-ea0ed52664c1",
-              "port": "7450aaa0-bcc8-4ee3-a502-ec21a3e13ac3"
+              "cell": "c922fe7d-938a-419b-b42f-90d6f6e223e3",
+              "port": "74f18d43-f71c-4d8d-96ea-7b29ea04d1f2"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -4285,6 +4851,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F1.6 Result to PoS"
               }
             },
             "width": 200,
@@ -4308,16 +4877,22 @@
             "labels": [
               "F1.6 Result to PoS"
             ],
-            "id": "3faf098d-e71d-49f9-b9d5-fe5eaf2bf23e",
+            "id": "4193269f-1058-4380-9eff-c576ab9f1a6d",
             "source": {
-              "cell": "d38a796c-a025-4bc6-8756-ea0ed52664c1",
-              "port": "7450aaa0-bcc8-4ee3-a502-ec21a3e13ac3"
+              "cell": "c922fe7d-938a-419b-b42f-90d6f6e223e3",
+              "port": "74f18d43-f71c-4d8d-96ea-7b29ea04d1f2"
             },
             "target": {
-              "cell": "6b37913e-4ba6-40c5-8655-18a5c286b465",
-              "port": "897ec2ea-06ed-4f43-839b-b18fc04e1618"
+              "cell": "f2795bf0-af53-44be-94dd-24f1e64d0b2b",
+              "port": "76d1d95a-f1a7-4f38-9736-a6ee190cff8d"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -4331,6 +4906,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "F1.6b Result to App"
               }
             },
             "width": 200,
@@ -4354,16 +4932,22 @@
             "labels": [
               "F1.6b Result to App"
             ],
-            "id": "84d7c97d-263e-4154-a8db-e1103bf65e4c",
+            "id": "e34fe383-e747-43f2-b7d2-0f6a31b66103",
             "source": {
-              "cell": "d38a796c-a025-4bc6-8756-ea0ed52664c1",
-              "port": "f6e0d832-ff00-4856-bb71-2887e5ccdaac"
+              "cell": "c922fe7d-938a-419b-b42f-90d6f6e223e3",
+              "port": "a236e3e3-56b6-4691-a04a-67b7735660db"
             },
             "target": {
-              "cell": "c4b42f54-f64c-4328-ad9c-f4c005c641fb",
-              "port": "53224751-d862-4404-a8da-0021da9dee75"
+              "cell": "8cab87d3-f56e-4097-9316-0999378e7754",
+              "port": "6bbd37e9-f042-4bab-83f9-efe4f3474026"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -4377,6 +4961,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "Persist Booking"
               }
             },
             "width": 200,
@@ -4400,16 +4987,22 @@
             "labels": [
               "Persist Booking"
             ],
-            "id": "48fcb71c-8e57-4a45-a3e0-4ec2730a7455",
+            "id": "793ef25c-bf1f-4fce-9f30-24e10f944c36",
             "source": {
-              "cell": "bd9bd4a4-a2b7-4374-a7dd-f6c61a0d1930",
-              "port": "b85e4f40-73a3-4026-a392-216546dafa74"
+              "cell": "5aa34137-95f8-4774-8e4a-406948b88292",
+              "port": "d4f6c4ae-b795-4021-9c97-929b6dd6c28c"
             },
             "target": {
-              "cell": "dbec6aaa-4362-495b-ba3f-c664928ad564",
-              "port": "1bc454b5-306d-4916-832b-da3014fea1fb"
+              "cell": "9fe1d9ac-9444-4ce4-8bd9-7e30d32b0b0d",
+              "port": "0fa8e19b-4c3a-4d36-ae38-3180d5a078c2"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -4423,6 +5016,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "Update Status"
               }
             },
             "width": 200,
@@ -4446,16 +5042,22 @@
             "labels": [
               "Update Status"
             ],
-            "id": "65054789-c60a-4926-879c-4ca32304c89a",
+            "id": "3dbfcb9e-7f42-4194-84f5-99919869114b",
             "source": {
-              "cell": "d38a796c-a025-4bc6-8756-ea0ed52664c1",
-              "port": "b6e83246-70b8-42b2-b43a-26e8a720a4f3"
+              "cell": "c922fe7d-938a-419b-b42f-90d6f6e223e3",
+              "port": "e8767574-98f7-4ea1-a7c6-76f3ba638278"
             },
             "target": {
-              "cell": "e1737a4b-974b-4a99-9bbc-52f896390eaf",
-              "port": "00be6fa0-5b4b-49ba-b45c-d15b80d45e11"
+              "cell": "4a6b7cb9-869b-4f86-9ad6-3825f0505e45",
+              "port": "8a7839c5-4941-4b9f-83fd-fca274b96064"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           },
           {
             "shape": "flow",
@@ -4469,6 +5071,9 @@
                   "name": ""
                 },
                 "strokeDasharray": null
+              },
+              "text": {
+                "text": "Maintain Token"
               }
             },
             "width": 200,
@@ -4492,16 +5097,22 @@
             "labels": [
               "Maintain Token"
             ],
-            "id": "c9d55d13-5d48-4de6-87e1-96bfa11865e8",
+            "id": "c50b7e37-1e69-4d74-b5d4-bc64b13802fe",
             "source": {
-              "cell": "d38a796c-a025-4bc6-8756-ea0ed52664c1",
-              "port": "7450aaa0-bcc8-4ee3-a502-ec21a3e13ac3"
+              "cell": "c922fe7d-938a-419b-b42f-90d6f6e223e3",
+              "port": "74f18d43-f71c-4d8d-96ea-7b29ea04d1f2"
             },
             "target": {
-              "cell": "e882efd6-267e-49c4-8305-2f61adc72b00",
-              "port": "2ad19c6e-92c1-4c03-86cf-1cbf55341682"
+              "cell": "2548c64f-d171-47c0-88e6-3baa45cdab95",
+              "port": "9617a36b-4a13-4497-b27d-511087c916f6"
             },
-            "vertices": []
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
           }
         ],
         "description": ""
