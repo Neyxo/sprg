@@ -1,9 +1,9 @@
 {
   "version": "2.5.0",
   "summary": {
-    "title": "Mobile Payment – Threat Model (DFD)",
-    "owner": "SPR G",
-    "description": "DFD Level 0 + Level 1 (PoS) mit Boundaries/Grouping kompatibel zu Threat Dragon.",
+    "title": "Mobile Payment – Overview (per Spec)",
+    "owner": "SecReq",
+    "description": "General overview with key components & flows from the SecReq Use-Case.",
     "id": 0
   },
   "detail": {
@@ -11,28 +11,28 @@
     "diagrams": [
       {
         "id": 0,
-        "title": "DFD Level 0 – Context",
+        "title": "System Overview",
         "diagramType": "Generic",
-        "placeholder": "DFD Level 0 – Context description",
+        "placeholder": "System Overview description",
         "thumbnail": "./public/content/images/thumbnail.jpg",
         "version": "2.5.0",
         "cells": [
           {
             "position": {
-              "x": 0,
-              "y": 0
+              "x": 980,
+              "y": 20
             },
             "size": {
-              "width": 420,
-              "height": 300
+              "width": 400,
+              "height": 560
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "d524ecfd-8d17-42b7-bf81-afcfab36a34f",
+            "id": "8e783320-b470-44a3-8ebc-360b6f4ec4d6",
             "zIndex": -1,
             "attrs": {
               "text": {
-                "text": "TB1 – Kunden-Gerät"
+                "text": "External Providers"
               }
             },
             "tools": {
@@ -44,7 +44,7 @@
             },
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "TB1 – Kunden-Gerät",
+              "name": "External Providers",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -52,20 +52,20 @@
           },
           {
             "position": {
-              "x": 440,
-              "y": 0
+              "x": 420,
+              "y": 20
             },
             "size": {
-              "width": 320,
-              "height": 300
+              "width": 520,
+              "height": 560
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "047b7fee-5471-4c82-868c-36096a9a7031",
+            "id": "64b941f7-a166-4483-ab36-35a5a4f5dfb3",
             "zIndex": -1,
             "attrs": {
               "text": {
-                "text": "TB2 – Öffentliche Netze"
+                "text": "Mobile Payment Provider – Backend"
               }
             },
             "tools": {
@@ -77,7 +77,7 @@
             },
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "TB2 – Öffentliche Netze",
+              "name": "Mobile Payment Provider – Backend",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -85,53 +85,20 @@
           },
           {
             "position": {
-              "x": 780,
-              "y": 0
-            },
-            "size": {
-              "width": 320,
-              "height": 300
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "id": "4aa5a254-77c8-4bdd-b63c-8cc725b40e09",
-            "zIndex": -1,
-            "attrs": {
-              "text": {
-                "text": "TB3 – Merchant-Umfeld"
-              }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "TB3 – Merchant-Umfeld",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 0,
+              "x": 20,
               "y": 320
             },
             "size": {
-              "width": 700,
-              "height": 360
+              "width": 360,
+              "height": 260
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "6cc6c91e-723c-4085-9ec4-973eba7d1dbd",
+            "id": "e8b084a1-7c21-458f-9e3d-f471eab75f8e",
             "zIndex": -1,
             "attrs": {
               "text": {
-                "text": "TB4 – Anbieter-Backend (intern)"
+                "text": "Merchant Environment"
               }
             },
             "tools": {
@@ -143,7 +110,7 @@
             },
             "data": {
               "type": "tm.BoundaryBox",
-              "name": "TB4 – Anbieter-Backend (intern)",
+              "name": "Merchant Environment",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false
@@ -151,44 +118,11 @@
           },
           {
             "position": {
-              "x": 720,
-              "y": 320
+              "x": 40,
+              "y": 40
             },
             "size": {
-              "width": 380,
-              "height": 360
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "id": "f1fbcb21-1599-4710-826e-c48f926fa517",
-            "zIndex": -1,
-            "attrs": {
-              "text": {
-                "text": "TB5 – Externe Dritte"
-              }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "TB5 – Externe Dritte",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 60,
-              "y": 60
-            },
-            "size": {
-              "width": 140,
+              "width": 160,
               "height": 60
             },
             "attrs": {
@@ -198,7 +132,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "E1 Kunde"
+                "text": "Customer (Mobile App – iOS/Android)"
               }
             },
             "visible": true,
@@ -269,23 +203,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "c1a0529e-dbc1-4bbd-b9b8-a514461092e9"
+                  "id": "7b8f5f93-0520-40d7-8883-8a5d71f022a6"
                 },
                 {
                   "group": "right",
-                  "id": "1a432838-0b9e-498e-8a39-64fed73be942"
+                  "id": "22ec5ab6-f385-4801-8dc3-fd6417005c8e"
                 },
                 {
                   "group": "bottom",
-                  "id": "b660d437-dff7-4c69-90f4-4d96e9ab0f70"
+                  "id": "673a719a-1c5e-4b4d-b73a-888fd56cb1c5"
                 },
                 {
                   "group": "left",
-                  "id": "ee53c2e8-19de-45fc-a318-f955afe9c2c8"
+                  "id": "269f7942-afd5-40e2-91a7-fe0af0c03984"
                 }
               ]
             },
-            "id": "c45360e2-1790-4216-ab34-0bcde8459f94",
+            "id": "170a869d-985c-4e6b-a8e1-fba892a0e7b0",
             "zIndex": 0,
             "tools": {
               "items": [
@@ -296,7 +230,7 @@
             },
             "data": {
               "type": "tm.Actor",
-              "name": "E1 Kunde",
+              "name": "Customer (Mobile App – iOS/Android)",
               "description": "Endnutzer mit Mobile App",
               "isTrustBoundary": false,
               "outOfScope": false,
@@ -308,11 +242,11 @@
           },
           {
             "position": {
-              "x": 60,
-              "y": 180
+              "x": 40,
+              "y": 200
             },
             "size": {
-              "width": 140,
+              "width": 160,
               "height": 60
             },
             "attrs": {
@@ -322,7 +256,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "E2 PoS/Kassensystem"
+                "text": "Peer Recipient (Customer)"
               }
             },
             "visible": true,
@@ -393,23 +327,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "afc43ccc-9ef8-40a7-ba6c-b9d67157596a"
+                  "id": "87823200-87a6-411f-9e67-84c2aa49f42c"
                 },
                 {
                   "group": "right",
-                  "id": "53e5f1a1-90be-483a-a799-13cff2387191"
+                  "id": "7356d538-b0f7-4456-8e0d-52db32e7859e"
                 },
                 {
                   "group": "bottom",
-                  "id": "29ab822a-8d2f-4391-8391-a67eeeee54fb"
+                  "id": "205f3057-d3b7-42a1-a89c-ee51f718f79b"
                 },
                 {
                   "group": "left",
-                  "id": "0c1c93ac-3328-4930-852b-3ecd135ca0bd"
+                  "id": "5e8c818d-9980-4b52-b5b6-51ce2216bd4f"
                 }
               ]
             },
-            "id": "38d7e334-cc51-46b2-b42a-497bc4335dfb",
+            "id": "6c0d755d-fafc-464c-842d-1d0f099dcd52",
             "zIndex": 0,
             "tools": {
               "items": [
@@ -420,8 +354,8 @@
             },
             "data": {
               "type": "tm.Actor",
-              "name": "E2 PoS/Kassensystem",
-              "description": "Nimmt Zahlungen via NFC/QR entgegen.",
+              "name": "Peer Recipient (Customer)",
+              "description": "P2P Empfänger via Telefonnummer",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -432,11 +366,11 @@
           },
           {
             "position": {
-              "x": 60,
-              "y": 300
+              "x": 40,
+              "y": 360
             },
             "size": {
-              "width": 140,
+              "width": 160,
               "height": 60
             },
             "attrs": {
@@ -446,7 +380,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "E3 Webshop"
+                "text": "Merchant"
               }
             },
             "visible": true,
@@ -517,23 +451,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "054baf63-1e1d-40e7-813c-d27cf356bea8"
+                  "id": "118f19e1-aef1-47f3-8835-d67089e0aeb9"
                 },
                 {
                   "group": "right",
-                  "id": "eafcb299-c657-49e9-9a96-747b3202db1e"
+                  "id": "080b9385-e304-4a68-88d6-9ee2df983bb1"
                 },
                 {
                   "group": "bottom",
-                  "id": "4ae7556a-23d7-4abb-8e64-2901e59a3789"
+                  "id": "7bac2a98-b5f1-4d37-ade5-f614e5421eef"
                 },
                 {
                   "group": "left",
-                  "id": "a146f8dd-84aa-44dd-a8b0-1eea1d7e9097"
+                  "id": "931e72cd-fadf-45e4-8fb1-fc543037265d"
                 }
               ]
             },
-            "id": "6315fa28-84cd-4fc0-b2d8-8d5d3fcc36ec",
+            "id": "d3a36496-a20a-4c50-b86e-66c5a8cfa2ed",
             "zIndex": 0,
             "tools": {
               "items": [
@@ -544,8 +478,8 @@
             },
             "data": {
               "type": "tm.Actor",
-              "name": "E3 Webshop",
-              "description": "Erzeugt Payment Sessions/QR, erhält Status.",
+              "name": "Merchant",
+              "description": "Shop Betreiber",
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -556,2821 +490,12 @@
           },
           {
             "position": {
-              "x": 60,
-              "y": 420
-            },
-            "size": {
-              "width": 140,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "E4 Externe Bank"
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "d14f6586-d7e3-4cb3-9850-c99434f34221"
-                },
-                {
-                  "group": "right",
-                  "id": "335a05a9-426c-4585-b1de-8a550d14e03e"
-                },
-                {
-                  "group": "bottom",
-                  "id": "dd2d1c7b-c029-4502-8738-74cfb14c7934"
-                },
-                {
-                  "group": "left",
-                  "id": "1ec75b7b-55e8-438a-a25e-1855e1504fd1"
-                }
-              ]
-            },
-            "id": "0de99e00-595a-4127-9e88-6dd6b94e8b73",
-            "zIndex": 0,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Actor",
-              "name": "E4 Externe Bank",
-              "description": "SEPA/Instant/ACH Schnittstellen.",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 60,
-              "y": 540
-            },
-            "size": {
-              "width": 140,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "E5 Kreditkartenanbieter"
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "fe1b8eb8-49f1-4c82-a1bb-1b3268cc59d9"
-                },
-                {
-                  "group": "right",
-                  "id": "908e510c-45d4-410b-a83e-e1f11fe90310"
-                },
-                {
-                  "group": "bottom",
-                  "id": "dc10a914-aba0-436d-a222-7e5c9a65d24e"
-                },
-                {
-                  "group": "left",
-                  "id": "73a00c6e-b930-4df4-a123-089f1ee4bc0a"
-                }
-              ]
-            },
-            "id": "c1a37fd1-6b8c-45de-9e3c-643e9699495d",
-            "zIndex": 0,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Actor",
-              "name": "E5 Kreditkartenanbieter",
-              "description": "Autorisierung/Tokenization.",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 60,
-              "y": 660
-            },
-            "size": {
-              "width": 140,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "E6 App Store"
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "a690dfcc-bdfe-4c7c-9027-54a6860d74d5"
-                },
-                {
-                  "group": "right",
-                  "id": "a2cca624-5637-47de-8b62-e8f2831138d1"
-                },
-                {
-                  "group": "bottom",
-                  "id": "e446994f-b954-46ce-bfe1-966dddeb3c0e"
-                },
-                {
-                  "group": "left",
-                  "id": "20741a75-215b-4253-a69e-3a08308a761b"
-                }
-              ]
-            },
-            "id": "7f9107c8-037e-40c9-a079-c9438a2f2fd1",
-            "zIndex": 0,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Actor",
-              "name": "E6 App Store",
-              "description": "Distribution/Updates; Supply-Chain-Risiken.",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 60,
-              "y": 780
-            },
-            "size": {
-              "width": 140,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "E7 SMS/Push-Provider"
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "c1530d03-47f6-41d9-8793-ed7f2d5f5ffe"
-                },
-                {
-                  "group": "right",
-                  "id": "b5a241ea-69f4-4a63-bca0-5cec64b57cc0"
-                },
-                {
-                  "group": "bottom",
-                  "id": "75a83867-3fd7-494c-ae81-ea82e6876776"
-                },
-                {
-                  "group": "left",
-                  "id": "9a832992-c42e-4912-aeb8-a8e28dd2f3f9"
-                }
-              ]
-            },
-            "id": "4d5040f5-8ea2-44d6-ad30-3de13a8c7cc2",
-            "zIndex": 0,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Actor",
-              "name": "E7 SMS/Push-Provider",
-              "description": "OTP/Push Versand.",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 360,
-              "y": 60
-            },
-            "size": {
-              "width": 100,
-              "height": 100
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "P1 Mobile App"
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "4bf274e0-d780-4098-98d6-c81d5b53ca4f"
-                },
-                {
-                  "group": "right",
-                  "id": "0948ca74-986d-4159-a4d6-02177be2bfa1"
-                },
-                {
-                  "group": "bottom",
-                  "id": "a71b9acf-10de-4f49-83c7-e7760b1755b8"
-                },
-                {
-                  "group": "left",
-                  "id": "87a3c537-2514-4feb-80e3-0f8c622c0e88"
-                }
-              ]
-            },
-            "id": "e6a71008-830b-410e-92a9-82616fe4dd46",
-            "zIndex": 1,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Process",
-              "name": "P1 Mobile App",
-              "description": "iOS/Android Client; Auth via Biometrics/Passcode; Zahlungen (NFC/QR), P2P, Top-Ups.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 360,
-              "y": 180
-            },
-            "size": {
-              "width": 100,
-              "height": 100
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "P2 Customer Mgmt API"
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "d98db533-c3ce-43e9-be0e-05cb7eecb30b"
-                },
-                {
-                  "group": "right",
-                  "id": "da497ed1-2d9b-40da-b7fd-aea0f4207d35"
-                },
-                {
-                  "group": "bottom",
-                  "id": "49a5948a-f036-4a70-8cee-ccab5c0f7bd4"
-                },
-                {
-                  "group": "left",
-                  "id": "39b72607-e30c-4466-b194-8079d107d992"
-                }
-              ]
-            },
-            "id": "81186225-4d5a-42b6-a4f0-f40326b5adc5",
-            "zIndex": 1,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Process",
-              "name": "P2 Customer Mgmt API",
-              "description": "API-Layer: Kunden, Sessions, 2FA, Tokenisierung.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 360,
-              "y": 300
-            },
-            "size": {
-              "width": 100,
-              "height": 100
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "P3 Merchant Mgmt"
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "91ff7f8f-320b-4719-86ef-75ef985bd668"
-                },
-                {
-                  "group": "right",
-                  "id": "78c5edb7-fc52-4097-97d6-ffb23ff30575"
-                },
-                {
-                  "group": "bottom",
-                  "id": "33298f39-7a65-4548-a76a-4ad7b1c85390"
-                },
-                {
-                  "group": "left",
-                  "id": "f864f6f3-c046-47fd-b36f-af6a0bb47189"
-                }
-              ]
-            },
-            "id": "87343039-a9cd-48a9-96f9-1eb297a6fee5",
-            "zIndex": 1,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Process",
-              "name": "P3 Merchant Mgmt",
-              "description": "Händlerprofile, Terminals, Settlement-Parameter.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 360,
-              "y": 420
-            },
-            "size": {
-              "width": 100,
-              "height": 100
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "P4 Core Banking/Ledger"
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "9d991fbb-c4ac-4d4d-bf1d-780e73b06aa8"
-                },
-                {
-                  "group": "right",
-                  "id": "c3bf05ae-801f-44dc-a732-8dfc4225f329"
-                },
-                {
-                  "group": "bottom",
-                  "id": "58efd611-d2dd-48ee-b95c-315956b50c6a"
-                },
-                {
-                  "group": "left",
-                  "id": "3c66ddfa-4ed6-4998-b132-27cf5d279cad"
-                }
-              ]
-            },
-            "id": "65cfb25e-e322-4f98-ada4-b4ce53312676",
-            "zIndex": 1,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Process",
-              "name": "P4 Core Banking/Ledger",
-              "description": "Autorisierung, Buchung, Settlement.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 360,
-              "y": 540
-            },
-            "size": {
-              "width": 100,
-              "height": 100
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "P5 Admin-Frontend (2FA)"
-              }
-            },
-            "visible": true,
-            "shape": "process",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "0b52f5d7-d7cd-4c5c-91a3-c837893a8e2c"
-                },
-                {
-                  "group": "right",
-                  "id": "84d26768-6b25-4784-bfb3-ceede088ffe7"
-                },
-                {
-                  "group": "bottom",
-                  "id": "ea167d1f-df0e-4f5c-922c-0f387b788a4a"
-                },
-                {
-                  "group": "left",
-                  "id": "0a14d278-0b6d-490b-b7a3-2036bc619524"
-                }
-              ]
-            },
-            "id": "8cadd9c1-7ec1-4b71-a5e7-39ece1fc4dfc",
-            "zIndex": 1,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Process",
-              "name": "P5 Admin-Frontend (2FA)",
-              "description": "Externe Web-UI für Händler-Self-Service.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "handlesCardPayment": false,
-              "handlesGoodsOrServices": false,
-              "isWebApplication": false,
-              "privilegeLevel": "",
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 700,
-              "y": 60
-            },
-            "size": {
-              "width": 180,
-              "height": 60
-            },
-            "attrs": {
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "D1 Customer DB"
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "92c67da0-0589-4400-92e9-9356785cebb0"
-                },
-                {
-                  "group": "right",
-                  "id": "1036b73f-2912-416b-af96-e358b97b30b1"
-                },
-                {
-                  "group": "bottom",
-                  "id": "b0ea2eb3-3dc8-4db7-8f4d-81b67bb41ee8"
-                },
-                {
-                  "group": "left",
-                  "id": "6b1c5455-3831-4c6b-a274-b1b658d93a86"
-                }
-              ]
-            },
-            "id": "6f7cbfae-9be5-4757-be58-19e20edfb4bc",
-            "zIndex": 3,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Store",
-              "name": "D1 Customer DB",
-              "description": "KYC, Gerätebindungen, Keys.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 700,
-              "y": 180
-            },
-            "size": {
-              "width": 180,
-              "height": 60
-            },
-            "attrs": {
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "D2 Merchant DB"
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "247fac9d-5dcb-43bf-a352-c6f44365cc97"
-                },
-                {
-                  "group": "right",
-                  "id": "df5dc3b9-1dcf-4a3b-93eb-35e8dd292e87"
-                },
-                {
-                  "group": "bottom",
-                  "id": "2632a257-98bb-4ee2-98aa-7240a3fad4aa"
-                },
-                {
-                  "group": "left",
-                  "id": "02cea721-0ceb-4851-80c9-b8eafe4689d1"
-                }
-              ]
-            },
-            "id": "7e6af192-7abd-4ee8-8d0c-c9dd2028e688",
-            "zIndex": 3,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Store",
-              "name": "D2 Merchant DB",
-              "description": "Händlerstammdaten, Terminal-Keys, Rollen.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 700,
-              "y": 300
-            },
-            "size": {
-              "width": 190,
-              "height": 60
-            },
-            "attrs": {
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "D3 Ledger/Transactions"
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "6008bab7-3253-4e01-a7a9-d7d109cdbd69"
-                },
-                {
-                  "group": "right",
-                  "id": "82b9fc3f-fa55-433b-a9f7-4ca7d493199c"
-                },
-                {
-                  "group": "bottom",
-                  "id": "19a5b38c-fae8-4f0c-96a1-3d1bcc29674e"
-                },
-                {
-                  "group": "left",
-                  "id": "167eaebf-30b9-489f-8ab8-b5ef7ee2002b"
-                }
-              ]
-            },
-            "id": "8645458f-90d6-4ec2-ae58-1431546ddd53",
-            "zIndex": 3,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Store",
-              "name": "D3 Ledger/Transactions",
-              "description": "Transaktionsbuchhaltung, Audit.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 700,
+              "x": 80,
               "y": 420
             },
             "size": {
               "width": 180,
-              "height": 60
-            },
-            "attrs": {
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "D4 Voucher/Gift DB"
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "6a7e0a35-6c4f-4d65-bb67-dfeb405dba0c"
-                },
-                {
-                  "group": "right",
-                  "id": "cc2f2ec6-c736-4264-9489-9497b932e9f9"
-                },
-                {
-                  "group": "bottom",
-                  "id": "543ea980-1ba5-41c5-9a4b-7c9de34cecf0"
-                },
-                {
-                  "group": "left",
-                  "id": "98968e47-bd1c-438f-9707-c846425d42da"
-                }
-              ]
-            },
-            "id": "d3406e71-b0b8-46c5-820a-d5ad1294bdbc",
-            "zIndex": 3,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Store",
-              "name": "D4 Voucher/Gift DB",
-              "description": "Voucher, Seriennummern, Status.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 700,
-              "y": 540
-            },
-            "size": {
-              "width": 180,
-              "height": 60
-            },
-            "attrs": {
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "D5 Token Vault"
-              }
-            },
-            "visible": true,
-            "shape": "store",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "eba0ff36-0f42-4ff8-aff6-8f06a1bc2198"
-                },
-                {
-                  "group": "right",
-                  "id": "66256eed-d5e0-4673-8c7d-9d5482eb31dc"
-                },
-                {
-                  "group": "bottom",
-                  "id": "7e0bc6c3-8d6d-47f8-aadc-30313647f505"
-                },
-                {
-                  "group": "left",
-                  "id": "e828f331-67ff-41e8-ace6-a8ae5647a9c5"
-                }
-              ]
-            },
-            "id": "33e4b3c2-472d-47e7-baf6-fe3d79c70776",
-            "zIndex": 3,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Store",
-              "name": "D5 Token Vault",
-              "description": "Zahlungstokens (PAN-Tokenisierung), HSM-gestützt.",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
-              "threats": []
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "F0.1 Login/Payment/P2P/Top-Up"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F0.1 Login/Payment/P2P/Top-Up",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "F0.1 Login/Payment/P2P/Top-Up"
-            ],
-            "id": "d21816ad-a9cc-4bff-9906-6d9f94e9c8d3",
-            "source": {
-              "cell": "c45360e2-1790-4216-ab34-0bcde8459f94",
-              "port": "1a432838-0b9e-498e-8a39-64fed73be942"
-            },
-            "target": {
-              "cell": "e6a71008-830b-410e-92a9-82616fe4dd46",
-              "port": "87a3c537-2514-4feb-80e3-0f8c622c0e88"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "F0.3 Payment-Start NFC/QR/Code"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F0.3 Payment-Start NFC/QR/Code",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "F0.3 Payment-Start NFC/QR/Code"
-            ],
-            "id": "5ee77d8a-7b89-4610-9cb5-0e6bcb41719a",
-            "source": {
-              "cell": "e6a71008-830b-410e-92a9-82616fe4dd46",
-              "port": "87a3c537-2514-4feb-80e3-0f8c622c0e88"
-            },
-            "target": {
-              "cell": "38d7e334-cc51-46b2-b42a-497bc4335dfb",
-              "port": "53e5f1a1-90be-483a-a799-13cff2387191"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "F0.2 API Calls (TLS/mTLS)"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F0.2 API Calls (TLS/mTLS)",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "F0.2 API Calls (TLS/mTLS)"
-            ],
-            "id": "7899f629-4851-41e1-a90a-c0be52eb91a2",
-            "source": {
-              "cell": "e6a71008-830b-410e-92a9-82616fe4dd46",
-              "port": "a71b9acf-10de-4f49-83c7-e7760b1755b8"
-            },
-            "target": {
-              "cell": "81186225-4d5a-42b6-a4f0-f40326b5adc5",
-              "port": "d98db533-c3ce-43e9-be0e-05cb7eecb30b"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "F0.2b Auth-Request"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F0.2b Auth-Request",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "F0.2b Auth-Request"
-            ],
-            "id": "bbe266d0-fe44-4e2e-8f34-4b8056fd9925",
-            "source": {
-              "cell": "38d7e334-cc51-46b2-b42a-497bc4335dfb",
-              "port": "53e5f1a1-90be-483a-a799-13cff2387191"
-            },
-            "target": {
-              "cell": "81186225-4d5a-42b6-a4f0-f40326b5adc5",
-              "port": "39b72607-e30c-4466-b194-8079d107d992"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "F0.2c Authorize/Reserve"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F0.2c Authorize/Reserve",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "F0.2c Authorize/Reserve"
-            ],
-            "id": "ae07733f-07b4-467f-b587-a47b22560a81",
-            "source": {
-              "cell": "81186225-4d5a-42b6-a4f0-f40326b5adc5",
-              "port": "49a5948a-f036-4a70-8cee-ccab5c0f7bd4"
-            },
-            "target": {
-              "cell": "65cfb25e-e322-4f98-ada4-b4ce53312676",
-              "port": "9d991fbb-c4ac-4d4d-bf1d-780e73b06aa8"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "F0.4 Bank Clearing/SEPA"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F0.4 Bank Clearing/SEPA",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "F0.4 Bank Clearing/SEPA"
-            ],
-            "id": "be0cec34-0079-4158-8421-847ac56ef8dd",
-            "source": {
-              "cell": "65cfb25e-e322-4f98-ada4-b4ce53312676",
-              "port": "3c66ddfa-4ed6-4998-b132-27cf5d279cad"
-            },
-            "target": {
-              "cell": "0de99e00-595a-4127-9e88-6dd6b94e8b73",
-              "port": "335a05a9-426c-4585-b1de-8a550d14e03e"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "F0.4b Card Auth/Settlement"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F0.4b Card Auth/Settlement",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "F0.4b Card Auth/Settlement"
-            ],
-            "id": "6a73b23c-e3b0-487b-9bcb-ab768e1a49f9",
-            "source": {
-              "cell": "65cfb25e-e322-4f98-ada4-b4ce53312676",
-              "port": "3c66ddfa-4ed6-4998-b132-27cf5d279cad"
-            },
-            "target": {
-              "cell": "c1a37fd1-6b8c-45de-9e3c-643e9699495d",
-              "port": "908e510c-45d4-410b-a83e-e1f11fe90310"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "F0.5 Merchant Admin (2FA)"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F0.5 Merchant Admin (2FA)",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "F0.5 Merchant Admin (2FA)"
-            ],
-            "id": "a42fba4e-9793-4495-9c38-835f28f74f08",
-            "source": {
-              "cell": "81186225-4d5a-42b6-a4f0-f40326b5adc5",
-              "port": "49a5948a-f036-4a70-8cee-ccab5c0f7bd4"
-            },
-            "target": {
-              "cell": "8cadd9c1-7ec1-4b71-a5e7-39ece1fc4dfc",
-              "port": "0b52f5d7-d7cd-4c5c-91a3-c837893a8e2c"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "F0.6 OTP/Push"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F0.6 OTP/Push",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "F0.6 OTP/Push"
-            ],
-            "id": "cbf652cd-d677-4ea5-b678-5cb9c3674b16",
-            "source": {
-              "cell": "81186225-4d5a-42b6-a4f0-f40326b5adc5",
-              "port": "49a5948a-f036-4a70-8cee-ccab5c0f7bd4"
-            },
-            "target": {
-              "cell": "4d5040f5-8ea2-44d6-ad30-3de13a8c7cc2",
-              "port": "c1530d03-47f6-41d9-8793-ed7f2d5f5ffe"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "F0.7 App Download/Update"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F0.7 App Download/Update",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "F0.7 App Download/Update"
-            ],
-            "id": "4a9be2af-b201-4bd5-ac42-0ff7b3b89de7",
-            "source": {
-              "cell": "e6a71008-830b-410e-92a9-82616fe4dd46",
-              "port": "a71b9acf-10de-4f49-83c7-e7760b1755b8"
-            },
-            "target": {
-              "cell": "7f9107c8-037e-40c9-a079-c9438a2f2fd1",
-              "port": "a690dfcc-bdfe-4c7c-9027-54a6860d74d5"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "Status/Kundenpflege"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Status/Kundenpflege",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Status/Kundenpflege"
-            ],
-            "id": "ab74be4a-abd8-4a7d-b9cc-35859a819c9d",
-            "source": {
-              "cell": "81186225-4d5a-42b6-a4f0-f40326b5adc5",
-              "port": "da497ed1-2d9b-40da-b7fd-aea0f4207d35"
-            },
-            "target": {
-              "cell": "6f7cbfae-9be5-4757-be58-19e20edfb4bc",
-              "port": "6b1c5455-3831-4c6b-a274-b1b658d93a86"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "Händlerpflege"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Händlerpflege",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Händlerpflege"
-            ],
-            "id": "6a454927-d5ae-4156-a6a7-6e3099424983",
-            "source": {
-              "cell": "87343039-a9cd-48a9-96f9-1eb297a6fee5",
-              "port": "78c5edb7-fc52-4097-97d6-ffb23ff30575"
-            },
-            "target": {
-              "cell": "7e6af192-7abd-4ee8-8d0c-c9dd2028e688",
-              "port": "02cea721-0ceb-4851-80c9-b8eafe4689d1"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "Buchungen/Audit"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Buchungen/Audit",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Buchungen/Audit"
-            ],
-            "id": "7c890cee-fc6a-474d-84a0-f1fb978a1aab",
-            "source": {
-              "cell": "65cfb25e-e322-4f98-ada4-b4ce53312676",
-              "port": "c3bf05ae-801f-44dc-a732-8dfc4225f329"
-            },
-            "target": {
-              "cell": "8645458f-90d6-4ec2-ae58-1431546ddd53",
-              "port": "167eaebf-30b9-489f-8ab8-b5ef7ee2002b"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "Voucher redeem/validate"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Voucher redeem/validate",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Voucher redeem/validate"
-            ],
-            "id": "576ea18c-5825-46ca-b8b3-b628101ffa0f",
-            "source": {
-              "cell": "81186225-4d5a-42b6-a4f0-f40326b5adc5",
-              "port": "da497ed1-2d9b-40da-b7fd-aea0f4207d35"
-            },
-            "target": {
-              "cell": "d3406e71-b0b8-46c5-820a-d5ad1294bdbc",
-              "port": "98968e47-bd1c-438f-9707-c846425d42da"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "Tokenpflege"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Tokenpflege",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "Tokenpflege"
-            ],
-            "id": "cab471e5-7a4f-43a7-8fa5-61c026531790",
-            "source": {
-              "cell": "81186225-4d5a-42b6-a4f0-f40326b5adc5",
-              "port": "da497ed1-2d9b-40da-b7fd-aea0f4207d35"
-            },
-            "target": {
-              "cell": "33e4b3c2-472d-47e7-baf6-fe3d79c70776",
-              "port": "e828f331-67ff-41e8-ace6-a8ae5647a9c5"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "F0.3b Webshop Session/Status"
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "F0.3b Webshop Session/Status",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": []
-            },
-            "labels": [
-              "F0.3b Webshop Session/Status"
-            ],
-            "id": "b7f8181a-7b0c-44f4-a816-accbea7ca619",
-            "source": {
-              "cell": "81186225-4d5a-42b6-a4f0-f40326b5adc5",
-              "port": "39b72607-e30c-4466-b194-8079d107d992"
-            },
-            "target": {
-              "cell": "6315fa28-84cd-4fc0-b2d8-8d5d3fcc36ec",
-              "port": "eafcb299-c657-49e9-9a96-747b3202db1e"
-            },
-            "vertices": [],
-            "tools": {
-              "items": [
-                "button-remove"
-              ],
-              "name": null
-            }
-          }
-        ],
-        "description": ""
-      },
-      {
-        "id": 1,
-        "title": "DFD Level 1 – PoS Zahlung",
-        "diagramType": "Generic",
-        "placeholder": "DFD Level 1 – PoS Zahlung description",
-        "thumbnail": "./public/content/images/thumbnail.jpg",
-        "version": "2.5.0",
-        "cells": [
-          {
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "size": {
-              "width": 420,
-              "height": 280
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "id": "2eaf1c3f-1bb7-4728-9be0-a2e2efbbb0ee",
-            "zIndex": -1,
-            "attrs": {
-              "text": {
-                "text": "TB1 – Kunden-Gerät"
-              }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "TB1 – Kunden-Gerät",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 440,
-              "y": 0
-            },
-            "size": {
-              "width": 320,
-              "height": 280
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "id": "466df6a5-8d3d-4c00-8762-5c5300579a43",
-            "zIndex": -1,
-            "attrs": {
-              "text": {
-                "text": "TB3 – Merchant-Umfeld"
-              }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "TB3 – Merchant-Umfeld",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 0,
-              "y": 300
-            },
-            "size": {
-              "width": 760,
-              "height": 320
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "id": "3cf2be85-4180-4f01-9a20-5c362f6786a0",
-            "zIndex": -1,
-            "attrs": {
-              "text": {
-                "text": "TB4 – Anbieter-Backend (intern)"
-              }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "TB4 – Anbieter-Backend (intern)",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 780,
-              "y": 300
-            },
-            "size": {
-              "width": 300,
-              "height": 320
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "id": "7b566b95-93ea-41c3-ba3d-2c9c8ceb09ae",
-            "zIndex": -1,
-            "attrs": {
-              "text": {
-                "text": "TB5 – Externe Dritte"
-              }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "TB5 – Externe Dritte",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
-              "x": 60,
-              "y": 60
-            },
-            "size": {
-              "width": 140,
-              "height": 60
+              "height": 80
             },
             "attrs": {
               "body": {
@@ -3379,379 +504,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "E2 PoS/Kassensystem"
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "0869ea95-52e5-4ad1-b6c9-204c6ac209a8"
-                },
-                {
-                  "group": "right",
-                  "id": "eece229f-1362-4714-acda-b187231cbb0e"
-                },
-                {
-                  "group": "bottom",
-                  "id": "7abd05c5-cbf3-4120-a9ec-680afc0abe8f"
-                },
-                {
-                  "group": "left",
-                  "id": "304bf818-f34a-4d19-9a2e-8de60e3434b9"
-                }
-              ]
-            },
-            "id": "bd054025-b743-4104-a1ba-383e6c7affbc",
-            "zIndex": 0,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Actor",
-              "name": "E2 PoS/Kassensystem",
-              "description": "Terminal; leitet Autorisierungsanfrage weiter.",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 60,
-              "y": 180
-            },
-            "size": {
-              "width": 140,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "E4 Bank"
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "9a9568e3-4a60-4474-bb99-cffe4ed01045"
-                },
-                {
-                  "group": "right",
-                  "id": "4f42af16-f538-45a9-a970-1733f3ca49d7"
-                },
-                {
-                  "group": "bottom",
-                  "id": "03e6c55f-bb0d-43f0-aafb-22aecb2157d7"
-                },
-                {
-                  "group": "left",
-                  "id": "1bdf98f0-69b6-421e-8a88-9c04cc184eff"
-                }
-              ]
-            },
-            "id": "9cdc795b-2f8a-49d2-8630-c9818b826576",
-            "zIndex": 0,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Actor",
-              "name": "E4 Bank",
-              "description": "SEPA/Instant.",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 60,
-              "y": 300
-            },
-            "size": {
-              "width": 140,
-              "height": 60
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "E5 Karten-Netz"
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 3,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "28a7a733-2111-4a03-9c51-1ed07e8165c9"
-                },
-                {
-                  "group": "right",
-                  "id": "b4b534d9-67c3-44f7-8866-0f4fa6c5422f"
-                },
-                {
-                  "group": "bottom",
-                  "id": "2327f632-01a9-4d77-9aee-d797fc8ee1c3"
-                },
-                {
-                  "group": "left",
-                  "id": "f3619cea-3526-4997-ac4d-9c5ba5924d49"
-                }
-              ]
-            },
-            "id": "89808abf-2c5f-47d8-b647-4fdd6d394e58",
-            "zIndex": 0,
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
-            },
-            "data": {
-              "type": "tm.Actor",
-              "name": "E5 Karten-Netz",
-              "description": "Card Auth/Settlement.",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 360,
-              "y": 60
-            },
-            "size": {
-              "width": 100,
-              "height": 100
-            },
-            "attrs": {
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "text": {
-                "text": "P1 Mobile App"
+                "text": "PoS Kassensystem (NFC/QR/Code)"
               }
             },
             "visible": true,
@@ -3822,23 +575,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "16c9964d-3037-47e4-a2a8-03e5444f8d44"
+                  "id": "58a48619-dd5c-479b-8b2f-86de1766a568"
                 },
                 {
                   "group": "right",
-                  "id": "7e99a204-613f-4957-8b38-1526d3fc1a9f"
+                  "id": "f266de8f-6251-4b19-bfc8-9e4bd8e9f0e1"
                 },
                 {
                   "group": "bottom",
-                  "id": "0ed91a2c-ec3a-455c-94a3-b20927f812f0"
+                  "id": "5eb8a7c7-1a69-4dc3-b89a-d462d285db8e"
                 },
                 {
                   "group": "left",
-                  "id": "abefdad1-5fb6-464a-bc3f-8c8b5e788faa"
+                  "id": "feab1cbb-8791-4190-aabf-30f2a72ecfe3"
                 }
               ]
             },
-            "id": "9369a1b3-0a87-4728-b86c-fa03f2fce163",
+            "id": "8086c5f0-c4eb-491a-b7fd-0dc93e01c9d5",
             "zIndex": 1,
             "tools": {
               "items": [
@@ -3849,8 +602,8 @@
             },
             "data": {
               "type": "tm.Process",
-              "name": "P1 Mobile App",
-              "description": "Startet Zahlung; erzeugt Nonce/cryptogram.",
+              "name": "PoS Kassensystem (NFC/QR/Code)",
+              "description": "NFC-fähig; QR & 8-stelliger Code",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -3864,12 +617,266 @@
           },
           {
             "position": {
-              "x": 360,
+              "x": 80,
+              "y": 500
+            },
+            "size": {
+              "width": 180,
+              "height": 80
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "text": {
+                "text": "Webshop"
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "eb0e1ab2-5614-4631-a5a1-7e455293cec5"
+                },
+                {
+                  "group": "right",
+                  "id": "44a6e60e-68ad-4f1b-97da-99bf3cd0760c"
+                },
+                {
+                  "group": "bottom",
+                  "id": "59b8afd6-e7fb-45cb-aedc-07be35b53a54"
+                },
+                {
+                  "group": "left",
+                  "id": "f41de146-8962-48c6-9878-02ff93a61c87"
+                }
+              ]
+            },
+            "id": "a17af800-eb55-4479-b64e-bd25ffecf971",
+            "zIndex": 1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
+            "data": {
+              "type": "tm.Process",
+              "name": "Webshop",
+              "description": "Bestellungen; QR/Backup-Code",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": true,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 460,
+              "y": 80
+            },
+            "size": {
+              "width": 220,
+              "height": 80
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "text": {
+                "text": "Backend: Merchant Management"
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "4df53293-1eda-43f0-953b-da2009e3a126"
+                },
+                {
+                  "group": "right",
+                  "id": "e8be6927-0504-4d28-90ce-7cbfbaab8b0e"
+                },
+                {
+                  "group": "bottom",
+                  "id": "75709bd9-438b-4fa3-8e69-8226bdc41c8f"
+                },
+                {
+                  "group": "left",
+                  "id": "ec9e0e83-f169-4cf4-990e-81a9ec853a01"
+                }
+              ]
+            },
+            "id": "ce2b1654-afc8-4e4f-a07a-202841502411",
+            "zIndex": 1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
+            "data": {
+              "type": "tm.Process",
+              "name": "Backend: Merchant Management",
+              "description": "Verwaltung der Merchants (internes System)",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 460,
               "y": 180
             },
             "size": {
-              "width": 100,
-              "height": 100
+              "width": 220,
+              "height": 80
             },
             "attrs": {
               "body": {
@@ -3878,7 +885,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "P2 Customer Mgmt API"
+                "text": "Backend: Customer Management"
               }
             },
             "visible": true,
@@ -3949,23 +956,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "347724c6-a77d-4acb-a645-0117123df30d"
+                  "id": "9277dfc9-8dc2-4b65-b2c4-92da8362e9f1"
                 },
                 {
                   "group": "right",
-                  "id": "a896a9d4-42ad-4e14-a4f7-66444bac4582"
+                  "id": "82463e16-1fd9-42ae-961a-b80a716bc3e2"
                 },
                 {
                   "group": "bottom",
-                  "id": "119e41a1-e190-4ae0-87c5-1d5b8977b189"
+                  "id": "f0a1acb0-66c7-4d6f-9e13-db6a52e5aceb"
                 },
                 {
                   "group": "left",
-                  "id": "4248bbef-71e2-48b4-a377-cff26d9889eb"
+                  "id": "3cf5c651-5fbd-45e0-8375-053bf1a5ca04"
                 }
               ]
             },
-            "id": "7d359c6f-903d-448d-be54-21fd138e4f44",
+            "id": "7e589a3d-4c90-46d3-9b7a-a9cde4b8fc44",
             "zIndex": 1,
             "tools": {
               "items": [
@@ -3976,8 +983,8 @@
             },
             "data": {
               "type": "tm.Process",
-              "name": "P2 Customer Mgmt API",
-              "description": "Validierung, Token, 2FA.",
+              "name": "Backend: Customer Management",
+              "description": "Verwaltung der Kunden (internes System)",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -3991,12 +998,12 @@
           },
           {
             "position": {
-              "x": 360,
-              "y": 300
+              "x": 460,
+              "y": 280
             },
             "size": {
-              "width": 100,
-              "height": 100
+              "width": 260,
+              "height": 80
             },
             "attrs": {
               "body": {
@@ -4005,7 +1012,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "P4 Core Banking/Ledger"
+                "text": "Frontend: Merchant Self-Service (HTTPS, 2FA)"
               }
             },
             "visible": true,
@@ -4076,23 +1083,23 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "87e7d5f4-fa44-48d7-b10f-a11c2a40f392"
+                  "id": "22b2eb7d-ad1d-4bc5-a1ca-5f6550aa44be"
                 },
                 {
                   "group": "right",
-                  "id": "64f73f32-0f43-4c64-b06d-aad28995b5d1"
+                  "id": "91a058eb-3431-4c55-8c68-3b6ab59f6c57"
                 },
                 {
                   "group": "bottom",
-                  "id": "755d1621-7eed-428b-9bc0-185c3bf04c45"
+                  "id": "784cfb44-4328-47f3-85dc-f3c26a778f5b"
                 },
                 {
                   "group": "left",
-                  "id": "de1644f9-c8c7-418a-b723-7164a656adec"
+                  "id": "5d54feea-891f-4773-aeb0-f5e9f5d4ab40"
                 }
               ]
             },
-            "id": "0c1335fc-57eb-4d91-a4ef-b9042bf07266",
+            "id": "1e654850-db57-45e6-a698-a143e0df7b5f",
             "zIndex": 1,
             "tools": {
               "items": [
@@ -4103,13 +1110,140 @@
             },
             "data": {
               "type": "tm.Process",
-              "name": "P4 Core Banking/Ledger",
-              "description": "Autorisierung/Reservierung.",
+              "name": "Frontend: Merchant Self-Service (HTTPS, 2FA)",
+              "description": "Extern zugänglich, 2FA",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
               "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": true,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 460,
+              "y": 400
+            },
+            "size": {
+              "width": 260,
+              "height": 100
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "text": {
+                "text": "Backend: Core Banking System"
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "42529f4a-4446-4ac2-b47e-caa001ffc935"
+                },
+                {
+                  "group": "right",
+                  "id": "371a50bb-ac13-4d97-a3d7-bed482f6a293"
+                },
+                {
+                  "group": "bottom",
+                  "id": "5cd5df92-f75d-45ab-b251-501a81e5f7aa"
+                },
+                {
+                  "group": "left",
+                  "id": "ac43f72f-70ba-4cf7-a968-c9b5450a2841"
+                }
+              ]
+            },
+            "id": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+            "zIndex": 1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
+            "data": {
+              "type": "tm.Process",
+              "name": "Backend: Core Banking System",
+              "description": "Transaktionen & Buchführung (FINMA); Webservices",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": true,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
@@ -4118,28 +1252,156 @@
           },
           {
             "position": {
-              "x": 700,
+              "x": 760,
+              "y": 420
+            },
+            "size": {
+              "width": 220,
+              "height": 60
+            },
+            "attrs": {
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "text": {
+                "text": "Ledger / Accounts DB"
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "952b4185-243c-4bd1-8009-64de078a7ced"
+                },
+                {
+                  "group": "right",
+                  "id": "cb139b9a-e364-4dea-a048-0988e4b293fa"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f835cc0c-709f-45a3-a427-5b7db015c06f"
+                },
+                {
+                  "group": "left",
+                  "id": "00df4451-be5f-4aaa-97a0-de6d92a2bdf2"
+                }
+              ]
+            },
+            "id": "d18c47e3-109e-4ac0-a65c-e87f258d2a60",
+            "zIndex": 3,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
+            "data": {
+              "type": "tm.Store",
+              "name": "Ledger / Accounts DB",
+              "description": "Konten & Buchungen",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1000,
               "y": 60
             },
             "size": {
-              "width": 190,
+              "width": 220,
               "height": 60
             },
             "attrs": {
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
+              "body": {
+                "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "text": {
-                "text": "D3 Ledger/Transactions"
+                "text": "Credit Card Provider"
               }
             },
             "visible": true,
-            "shape": "store",
+            "shape": "process",
             "ports": {
               "groups": {
                 "top": {
@@ -4206,24 +1468,24 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "0b7b6015-6500-40bb-bf12-2c9ab7106c61"
+                  "id": "cfd4b3a1-9283-4bf6-bfac-135e0ea7812a"
                 },
                 {
                   "group": "right",
-                  "id": "d0a9aa89-0d82-4d3a-8358-17174a315d33"
+                  "id": "12ed9618-f10e-432d-b60a-51ca5271a99f"
                 },
                 {
                   "group": "bottom",
-                  "id": "61acbd4b-8d2f-42ce-8a2b-a5f5da573a18"
+                  "id": "48d6f842-8c58-4f50-bf0f-8ecf70cb811c"
                 },
                 {
                   "group": "left",
-                  "id": "c2783497-971a-464a-bf0d-21b2a27c1fc7"
+                  "id": "aa80481c-5aaa-4700-9487-90ce20df046c"
                 }
               ]
             },
-            "id": "d0ae2eca-a000-4137-9e6e-699849b634cd",
-            "zIndex": 3,
+            "id": "b4be1f9d-2668-422f-9c7a-9140b3429cd2",
+            "zIndex": 1,
             "tools": {
               "items": [
                 "boundary",
@@ -4232,45 +1494,41 @@
               "name": null
             },
             "data": {
-              "type": "tm.Store",
-              "name": "D3 Ledger/Transactions",
-              "description": "Transaktionen/Audit.",
+              "type": "tm.Process",
+              "name": "Credit Card Provider",
+              "description": "Kreditkartenanbieter",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
+              "handlesCardPayment": true,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
               "threats": []
             }
           },
           {
             "position": {
-              "x": 700,
-              "y": 180
+              "x": 1000,
+              "y": 140
             },
             "size": {
-              "width": 180,
+              "width": 220,
               "height": 60
             },
             "attrs": {
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
+              "body": {
+                "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "text": {
-                "text": "D1 Customer DB"
+                "text": "Bank"
               }
             },
             "visible": true,
-            "shape": "store",
+            "shape": "process",
             "ports": {
               "groups": {
                 "top": {
@@ -4337,24 +1595,24 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "9425176e-39e5-4a79-84f8-b1f77ce4ff7e"
+                  "id": "b818d5b1-c2d6-429a-b5fc-93e4b4adcbff"
                 },
                 {
                   "group": "right",
-                  "id": "b19c9931-7603-4b62-801c-cada8aa6787f"
+                  "id": "17d2c000-d37d-44ad-bcc3-35f28ea4ecc9"
                 },
                 {
                   "group": "bottom",
-                  "id": "58b22346-699c-46b3-90f9-2b7a18c6a5fc"
+                  "id": "6d4db320-9f2a-4682-8d04-b62090e9f16e"
                 },
                 {
                   "group": "left",
-                  "id": "9c9f69cd-d4bf-45e1-82db-bae6be002d06"
+                  "id": "23005b6e-4c8a-4067-acdc-01f78102b4b4"
                 }
               ]
             },
-            "id": "685680c6-5e46-4594-beb1-9ccf6dd00c16",
-            "zIndex": 3,
+            "id": "1978937c-a0e2-4449-ab7f-dcff01c80aa8",
+            "zIndex": 1,
             "tools": {
               "items": [
                 "boundary",
@@ -4363,45 +1621,168 @@
               "name": null
             },
             "data": {
-              "type": "tm.Store",
-              "name": "D1 Customer DB",
-              "description": "Kundenstatus/Bindings.",
+              "type": "tm.Process",
+              "name": "Bank",
+              "description": "Konto/SEPA/Lastschrift",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
               "threats": []
             }
           },
           {
             "position": {
-              "x": 700,
+              "x": 1000,
+              "y": 220
+            },
+            "size": {
+              "width": 220,
+              "height": 60
+            },
+            "attrs": {
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "text": {
+                "text": "Voucher / Gift Cards"
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 3,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "54ba2391-012f-4970-8b29-24a7403d55e6"
+                },
+                {
+                  "group": "right",
+                  "id": "645a8ddc-5be7-4cbc-8299-b34bee3fc2fa"
+                },
+                {
+                  "group": "bottom",
+                  "id": "18193b86-d334-4388-9956-ae7eff86ed58"
+                },
+                {
+                  "group": "left",
+                  "id": "fe59aec6-b662-4137-9b66-3bf0f764ea33"
+                }
+              ]
+            },
+            "id": "34ca3694-ef5f-4100-86d7-87bf4c822a83",
+            "zIndex": 1,
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
+            },
+            "data": {
+              "type": "tm.Process",
+              "name": "Voucher / Gift Cards",
+              "description": "Prepay Geschenkkarten / Voucher",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1000,
               "y": 300
             },
             "size": {
-              "width": 180,
+              "width": 220,
               "height": 60
             },
             "attrs": {
-              "topLine": {
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              },
-              "bottomLine": {
+              "body": {
+                "stroke": "#333333",
                 "strokeWidth": 1.5,
                 "strokeDasharray": null
               },
               "text": {
-                "text": "D5 Token Vault"
+                "text": "Loyalty & Digital Marketing"
               }
             },
             "visible": true,
-            "shape": "store",
+            "shape": "process",
             "ports": {
               "groups": {
                 "top": {
@@ -4468,24 +1849,24 @@
               "items": [
                 {
                   "group": "top",
-                  "id": "fdd4ae3f-e39a-4955-b725-b3dcf4b04699"
+                  "id": "a7f3678d-92d7-41ff-ba36-c83d0c4f7efc"
                 },
                 {
                   "group": "right",
-                  "id": "a67f4781-076f-4ad0-b136-542cbc7212fb"
+                  "id": "457e4c82-a4ae-4acb-8db1-9dab93c08395"
                 },
                 {
                   "group": "bottom",
-                  "id": "0fc0340f-e26b-4175-96c0-56aa7318a096"
+                  "id": "d0d54806-0810-4d18-8cdd-a1686d5c97bc"
                 },
                 {
                   "group": "left",
-                  "id": "260da3b4-669c-48a3-886b-15a97d00233d"
+                  "id": "aa0c8338-3ac4-4e28-9b2a-3b19bbb8f8c0"
                 }
               ]
             },
-            "id": "3949ba91-ab10-4b42-9bdb-4af8eb8c61e9",
-            "zIndex": 3,
+            "id": "d7b40987-866c-471f-8bf7-a33ad6109b07",
+            "zIndex": 1,
             "tools": {
               "items": [
                 "boundary",
@@ -4494,18 +1875,17 @@
               "name": null
             },
             "data": {
-              "type": "tm.Store",
-              "name": "D5 Token Vault",
-              "description": "Zahlungstokens/HSM.",
+              "type": "tm.Process",
+              "name": "Loyalty & Digital Marketing",
+              "description": "Coupons, Stempelkarten",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isALog": false,
-              "isEncrypted": false,
-              "isSigned": false,
-              "storesCredentials": false,
-              "storesInventory": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
               "threats": []
             }
           },
@@ -4523,7 +1903,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "F1.1 Payment Request {amount, merchantId, ts,..."
+                "text": "NFC tap / QR scan / 8-digit code"
               }
             },
             "width": 200,
@@ -4532,7 +1912,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F1.1 Payment Request {amount, merchantId, ts,...",
+              "name": "NFC tap / QR scan / 8-digit code",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4545,16 +1925,16 @@
               "threats": []
             },
             "labels": [
-              "F1.1 Payment Request {amount, merchantId, ts,..."
+              "NFC tap / QR scan / 8-digit code"
             ],
-            "id": "99e1b952-53cc-432c-961a-f3f04bdad3e5",
+            "id": "239df92b-dee6-40cc-ac25-5354f29dacd1",
             "source": {
-              "cell": "9369a1b3-0a87-4728-b86c-fa03f2fce163",
-              "port": "abefdad1-5fb6-464a-bc3f-8c8b5e788faa"
+              "cell": "170a869d-985c-4e6b-a8e1-fba892a0e7b0",
+              "port": "673a719a-1c5e-4b4d-b73a-888fd56cb1c5"
             },
             "target": {
-              "cell": "bd054025-b743-4104-a1ba-383e6c7affbc",
-              "port": "eece229f-1362-4714-acda-b187231cbb0e"
+              "cell": "8086c5f0-c4eb-491a-b7fd-0dc93e01c9d5",
+              "port": "58a48619-dd5c-479b-8b2f-86de1766a568"
             },
             "vertices": [],
             "tools": {
@@ -4578,7 +1958,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "F1.2 Authorization Request {terminalId, amoun..."
+                "text": "Payment request"
               }
             },
             "width": 200,
@@ -4587,7 +1967,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F1.2 Authorization Request {terminalId, amoun...",
+              "name": "Payment request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4600,16 +1980,16 @@
               "threats": []
             },
             "labels": [
-              "F1.2 Authorization Request {terminalId, amoun..."
+              "Payment request"
             ],
-            "id": "87fcb356-6475-4bf9-b6dd-8e3b63ebad78",
+            "id": "3b062eb4-bbc8-4e3e-a303-c5b64ce86739",
             "source": {
-              "cell": "bd054025-b743-4104-a1ba-383e6c7affbc",
-              "port": "eece229f-1362-4714-acda-b187231cbb0e"
+              "cell": "8086c5f0-c4eb-491a-b7fd-0dc93e01c9d5",
+              "port": "f266de8f-6251-4b19-bfc8-9e4bd8e9f0e1"
             },
             "target": {
-              "cell": "7d359c6f-903d-448d-be54-21fd138e4f44",
-              "port": "4248bbef-71e2-48b4-a377-cff26d9889eb"
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "ac43f72f-70ba-4cf7-a968-c9b5450a2841"
             },
             "vertices": [],
             "tools": {
@@ -4633,7 +2013,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "F1.3 Authorize & Reserve {customerToken, amount}"
+                "text": "Post transaction / ledger update"
               }
             },
             "width": 200,
@@ -4642,7 +2022,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F1.3 Authorize & Reserve {customerToken, amount}",
+              "name": "Post transaction / ledger update",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4655,16 +2035,16 @@
               "threats": []
             },
             "labels": [
-              "F1.3 Authorize & Reserve {customerToken, amount}"
+              "Post transaction / ledger update"
             ],
-            "id": "2da22a2b-f5b2-4df8-8ef7-b2c30632940e",
+            "id": "ce5070d6-be2e-4973-b854-1cb44e57296b",
             "source": {
-              "cell": "7d359c6f-903d-448d-be54-21fd138e4f44",
-              "port": "119e41a1-e190-4ae0-87c5-1d5b8977b189"
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "371a50bb-ac13-4d97-a3d7-bed482f6a293"
             },
             "target": {
-              "cell": "0c1335fc-57eb-4d91-a4ef-b9042bf07266",
-              "port": "87e7d5f4-fa44-48d7-b10f-a11c2a40f392"
+              "cell": "d18c47e3-109e-4ac0-a65c-e87f258d2a60",
+              "port": "00df4451-be5f-4aaa-97a0-de6d92a2bdf2"
             },
             "vertices": [],
             "tools": {
@@ -4688,7 +2068,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "F1.4 Bank Debit/Authorization"
+                "text": "QR / 8-digit code (web)"
               }
             },
             "width": 200,
@@ -4697,7 +2077,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F1.4 Bank Debit/Authorization",
+              "name": "QR / 8-digit code (web)",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4710,16 +2090,16 @@
               "threats": []
             },
             "labels": [
-              "F1.4 Bank Debit/Authorization"
+              "QR / 8-digit code (web)"
             ],
-            "id": "8636a7b2-c9bf-4972-8f15-bc88bf6ba7c7",
+            "id": "36fc0b69-ae80-47fe-90d5-d91b3a7af0fa",
             "source": {
-              "cell": "0c1335fc-57eb-4d91-a4ef-b9042bf07266",
-              "port": "de1644f9-c8c7-418a-b723-7164a656adec"
+              "cell": "170a869d-985c-4e6b-a8e1-fba892a0e7b0",
+              "port": "673a719a-1c5e-4b4d-b73a-888fd56cb1c5"
             },
             "target": {
-              "cell": "9cdc795b-2f8a-49d2-8630-c9818b826576",
-              "port": "4f42af16-f538-45a9-a970-1733f3ca49d7"
+              "cell": "a17af800-eb55-4479-b64e-bd25ffecf971",
+              "port": "eb0e1ab2-5614-4631-a5a1-7e455293cec5"
             },
             "vertices": [],
             "tools": {
@@ -4743,7 +2123,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "F1.4b Card Authorization"
+                "text": "Payment request (web)"
               }
             },
             "width": 200,
@@ -4752,7 +2132,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F1.4b Card Authorization",
+              "name": "Payment request (web)",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4765,16 +2145,16 @@
               "threats": []
             },
             "labels": [
-              "F1.4b Card Authorization"
+              "Payment request (web)"
             ],
-            "id": "45758843-403c-4ad2-870a-154539cb9d68",
+            "id": "9aa8d39a-f949-4f00-a1bc-5a6db04d1e50",
             "source": {
-              "cell": "0c1335fc-57eb-4d91-a4ef-b9042bf07266",
-              "port": "de1644f9-c8c7-418a-b723-7164a656adec"
+              "cell": "a17af800-eb55-4479-b64e-bd25ffecf971",
+              "port": "44a6e60e-68ad-4f1b-97da-99bf3cd0760c"
             },
             "target": {
-              "cell": "89808abf-2c5f-47d8-b647-4fdd6d394e58",
-              "port": "b4b534d9-67c3-44f7-8866-0f4fa6c5422f"
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "ac43f72f-70ba-4cf7-a968-c9b5450a2841"
             },
             "vertices": [],
             "tools": {
@@ -4798,7 +2178,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "F1.5 Auth-Result {approved/declined, code}"
+                "text": "P2P initiate (phone number)"
               }
             },
             "width": 200,
@@ -4807,7 +2187,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F1.5 Auth-Result {approved/declined, code}",
+              "name": "P2P initiate (phone number)",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4820,16 +2200,16 @@
               "threats": []
             },
             "labels": [
-              "F1.5 Auth-Result {approved/declined, code}"
+              "P2P initiate (phone number)"
             ],
-            "id": "ec5fcb6a-fef6-4c3d-b894-e7a9bc1f1af8",
+            "id": "9a62e39f-8abc-4985-aead-aed00b1f8d04",
             "source": {
-              "cell": "0c1335fc-57eb-4d91-a4ef-b9042bf07266",
-              "port": "87e7d5f4-fa44-48d7-b10f-a11c2a40f392"
+              "cell": "170a869d-985c-4e6b-a8e1-fba892a0e7b0",
+              "port": "22ec5ab6-f385-4801-8dc3-fd6417005c8e"
             },
             "target": {
-              "cell": "7d359c6f-903d-448d-be54-21fd138e4f44",
-              "port": "119e41a1-e190-4ae0-87c5-1d5b8977b189"
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "ac43f72f-70ba-4cf7-a968-c9b5450a2841"
             },
             "vertices": [],
             "tools": {
@@ -4853,7 +2233,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "F1.6 Result to PoS"
+                "text": "P2P credit / notify"
               }
             },
             "width": 200,
@@ -4862,7 +2242,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F1.6 Result to PoS",
+              "name": "P2P credit / notify",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4875,16 +2255,16 @@
               "threats": []
             },
             "labels": [
-              "F1.6 Result to PoS"
+              "P2P credit / notify"
             ],
-            "id": "f4d1f0b8-bdf9-4941-9b5c-d5d7968fb594",
+            "id": "890aa2dd-2ab6-4fe6-9c66-f2f55edb27d7",
             "source": {
-              "cell": "7d359c6f-903d-448d-be54-21fd138e4f44",
-              "port": "4248bbef-71e2-48b4-a377-cff26d9889eb"
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "ac43f72f-70ba-4cf7-a968-c9b5450a2841"
             },
             "target": {
-              "cell": "bd054025-b743-4104-a1ba-383e6c7affbc",
-              "port": "eece229f-1362-4714-acda-b187231cbb0e"
+              "cell": "6c0d755d-fafc-464c-842d-1d0f099dcd52",
+              "port": "7356d538-b0f7-4456-8e0d-52db32e7859e"
             },
             "vertices": [],
             "tools": {
@@ -4908,7 +2288,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "F1.6b Result to App"
+                "text": "Load via voucher code"
               }
             },
             "width": 200,
@@ -4917,7 +2297,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "F1.6b Result to App",
+              "name": "Load via voucher code",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4930,16 +2310,16 @@
               "threats": []
             },
             "labels": [
-              "F1.6b Result to App"
+              "Load via voucher code"
             ],
-            "id": "14dff94a-7cd0-4009-9aca-e3d848750c44",
+            "id": "bb138f9e-bd88-4d59-bb69-c671ce75023e",
             "source": {
-              "cell": "7d359c6f-903d-448d-be54-21fd138e4f44",
-              "port": "347724c6-a77d-4acb-a645-0117123df30d"
+              "cell": "170a869d-985c-4e6b-a8e1-fba892a0e7b0",
+              "port": "22ec5ab6-f385-4801-8dc3-fd6417005c8e"
             },
             "target": {
-              "cell": "9369a1b3-0a87-4728-b86c-fa03f2fce163",
-              "port": "0ed91a2c-ec3a-455c-94a3-b20927f812f0"
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "ac43f72f-70ba-4cf7-a968-c9b5450a2841"
             },
             "vertices": [],
             "tools": {
@@ -4963,7 +2343,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "Persist Booking"
+                "text": "Validate / redeem voucher"
               }
             },
             "width": 200,
@@ -4972,7 +2352,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Persist Booking",
+              "name": "Validate / redeem voucher",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -4985,16 +2365,16 @@
               "threats": []
             },
             "labels": [
-              "Persist Booking"
+              "Validate / redeem voucher"
             ],
-            "id": "8312045e-a092-49cd-b6ca-8a921125423c",
+            "id": "e1b7514f-3ec5-4ea4-9d32-f8f1d364e26a",
             "source": {
-              "cell": "0c1335fc-57eb-4d91-a4ef-b9042bf07266",
-              "port": "64f73f32-0f43-4c64-b06d-aad28995b5d1"
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "371a50bb-ac13-4d97-a3d7-bed482f6a293"
             },
             "target": {
-              "cell": "d0ae2eca-a000-4137-9e6e-699849b634cd",
-              "port": "c2783497-971a-464a-bf0d-21b2a27c1fc7"
+              "cell": "34ca3694-ef5f-4100-86d7-87bf4c822a83",
+              "port": "fe59aec6-b662-4137-9b66-3bf0f764ea33"
             },
             "vertices": [],
             "tools": {
@@ -5018,7 +2398,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "Update Status"
+                "text": "Link / charge credit card"
               }
             },
             "width": 200,
@@ -5027,7 +2407,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Update Status",
+              "name": "Link / charge credit card",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -5040,16 +2420,16 @@
               "threats": []
             },
             "labels": [
-              "Update Status"
+              "Link / charge credit card"
             ],
-            "id": "98d18cf4-e8ac-4266-b24e-40796bde77a8",
+            "id": "a9f3fef7-1ed0-44a8-9b11-bda56bc1fc05",
             "source": {
-              "cell": "7d359c6f-903d-448d-be54-21fd138e4f44",
-              "port": "a896a9d4-42ad-4e14-a4f7-66444bac4582"
+              "cell": "170a869d-985c-4e6b-a8e1-fba892a0e7b0",
+              "port": "22ec5ab6-f385-4801-8dc3-fd6417005c8e"
             },
             "target": {
-              "cell": "685680c6-5e46-4594-beb1-9ccf6dd00c16",
-              "port": "9c9f69cd-d4bf-45e1-82db-bae6be002d06"
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "ac43f72f-70ba-4cf7-a968-c9b5450a2841"
             },
             "vertices": [],
             "tools": {
@@ -5073,7 +2453,7 @@
                 "strokeDasharray": null
               },
               "text": {
-                "text": "Maintain Token"
+                "text": "Card auth / capture"
               }
             },
             "width": 200,
@@ -5082,7 +2462,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Maintain Token",
+              "name": "Card auth / capture",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -5095,16 +2475,456 @@
               "threats": []
             },
             "labels": [
-              "Maintain Token"
+              "Card auth / capture"
             ],
-            "id": "7a05c656-b1da-4908-8423-ff0161fd582e",
+            "id": "e9779661-9f18-460e-8669-39a93c8fca11",
             "source": {
-              "cell": "7d359c6f-903d-448d-be54-21fd138e4f44",
-              "port": "a896a9d4-42ad-4e14-a4f7-66444bac4582"
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "371a50bb-ac13-4d97-a3d7-bed482f6a293"
             },
             "target": {
-              "cell": "3949ba91-ab10-4b42-9bdb-4af8eb8c61e9",
-              "port": "260da3b4-669c-48a3-886b-15a97d00233d"
+              "cell": "b4be1f9d-2668-422f-9c7a-9140b3429cd2",
+              "port": "aa80481c-5aaa-4700-9487-90ce20df046c"
+            },
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              },
+              "text": {
+                "text": "Link bank account / debit"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Link bank account / debit",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Link bank account / debit"
+            ],
+            "id": "2ed3111e-39b5-45ad-bb25-215651f42589",
+            "source": {
+              "cell": "170a869d-985c-4e6b-a8e1-fba892a0e7b0",
+              "port": "22ec5ab6-f385-4801-8dc3-fd6417005c8e"
+            },
+            "target": {
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "ac43f72f-70ba-4cf7-a968-c9b5450a2841"
+            },
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              },
+              "text": {
+                "text": "SEPA / bank transfer"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "SEPA / bank transfer",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "SEPA / bank transfer"
+            ],
+            "id": "295ec7a4-83ed-4359-b06b-e8c4dc9879f2",
+            "source": {
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "371a50bb-ac13-4d97-a3d7-bed482f6a293"
+            },
+            "target": {
+              "cell": "1978937c-a0e2-4449-ab7f-dcff01c80aa8",
+              "port": "23005b6e-4c8a-4067-acdc-01f78102b4b4"
+            },
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              },
+              "text": {
+                "text": "Apply coupons / update punch card"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Apply coupons / update punch card",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Apply coupons / update punch card"
+            ],
+            "id": "4449acf4-652f-45a7-8a37-0421aa23780a",
+            "source": {
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "371a50bb-ac13-4d97-a3d7-bed482f6a293"
+            },
+            "target": {
+              "cell": "d7b40987-866c-471f-8bf7-a33ad6109b07",
+              "port": "aa0c8338-3ac4-4e28-9b2a-3b19bbb8f8c0"
+            },
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              },
+              "text": {
+                "text": "Login (HTTPS + 2FA)"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Login (HTTPS + 2FA)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Login (HTTPS + 2FA)"
+            ],
+            "id": "f78e360f-aaaa-49ae-8739-f45eb03791d5",
+            "source": {
+              "cell": "d3a36496-a20a-4c50-b86e-66c5a8cfa2ed",
+              "port": "080b9385-e304-4a68-88d6-9ee2df983bb1"
+            },
+            "target": {
+              "cell": "1e654850-db57-45e6-a698-a143e0df7b5f",
+              "port": "5d54feea-891f-4773-aeb0-f5e9f5d4ab40"
+            },
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              },
+              "text": {
+                "text": "Merchant admin ops"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Merchant admin ops",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Merchant admin ops"
+            ],
+            "id": "1406b335-139d-469c-86fa-4aa4939a4081",
+            "source": {
+              "cell": "1e654850-db57-45e6-a698-a143e0df7b5f",
+              "port": "22b2eb7d-ad1d-4bc5-a1ca-5f6550aa44be"
+            },
+            "target": {
+              "cell": "ce2b1654-afc8-4e4f-a07a-202841502411",
+              "port": "75709bd9-438b-4fa3-8e69-8226bdc41c8f"
+            },
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              },
+              "text": {
+                "text": "Settlement / reports"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Settlement / reports",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Settlement / reports"
+            ],
+            "id": "52a27ba4-2419-4d97-a65f-9accd1ce62dd",
+            "source": {
+              "cell": "1e654850-db57-45e6-a698-a143e0df7b5f",
+              "port": "784cfb44-4328-47f3-85dc-f3c26a778f5b"
+            },
+            "target": {
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "42529f4a-4446-4ac2-b47e-caa001ffc935"
+            },
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              },
+              "text": {
+                "text": "View customers (RBAC)"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "View customers (RBAC)",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "View customers (RBAC)"
+            ],
+            "id": "73f262d5-efc6-434e-8021-f88faf5e73f0",
+            "source": {
+              "cell": "1e654850-db57-45e6-a698-a143e0df7b5f",
+              "port": "22b2eb7d-ad1d-4bc5-a1ca-5f6550aa44be"
+            },
+            "target": {
+              "cell": "7e589a3d-4c90-46d3-9b7a-a9cde4b8fc44",
+              "port": "f0a1acb0-66c7-4d6f-9e13-db6a52e5aceb"
+            },
+            "vertices": [],
+            "tools": {
+              "items": [
+                "button-remove"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              },
+              "text": {
+                "text": "Account ops / KYC updates"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Account ops / KYC updates",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Account ops / KYC updates"
+            ],
+            "id": "90808ac5-256e-4c8a-8139-0a30c608f6d5",
+            "source": {
+              "cell": "7e589a3d-4c90-46d3-9b7a-a9cde4b8fc44",
+              "port": "f0a1acb0-66c7-4d6f-9e13-db6a52e5aceb"
+            },
+            "target": {
+              "cell": "1776d0e8-4ef0-4931-a9a8-11b66afd16ab",
+              "port": "42529f4a-4446-4ac2-b47e-caa001ffc935"
             },
             "vertices": [],
             "tools": {
@@ -5118,8 +2938,8 @@
         "description": ""
       }
     ],
-    "diagramTop": 2,
-    "reviewer": "SPR G",
+    "diagramTop": 1,
+    "reviewer": "SecReq",
     "threatTop": 0
   }
 }
