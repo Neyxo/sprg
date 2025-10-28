@@ -494,8 +494,8 @@
               "y": 420
             },
             "size": {
-              "width": 180,
-              "height": 80
+              "width": 360,
+              "height": 360
             },
             "attrs": {
               "body": {
@@ -621,8 +621,8 @@
               "y": 500
             },
             "size": {
-              "width": 180,
-              "height": 80
+              "width": 360,
+              "height": 360
             },
             "attrs": {
               "body": {
@@ -748,8 +748,8 @@
               "y": 80
             },
             "size": {
-              "width": 220,
-              "height": 80
+              "width": 440,
+              "height": 440
             },
             "attrs": {
               "body": {
@@ -875,8 +875,8 @@
               "y": 180
             },
             "size": {
-              "width": 220,
-              "height": 80
+              "width": 440,
+              "height": 440
             },
             "attrs": {
               "body": {
@@ -1002,8 +1002,8 @@
               "y": 280
             },
             "size": {
-              "width": 260,
-              "height": 80
+              "width": 520,
+              "height": 520
             },
             "attrs": {
               "body": {
@@ -1129,8 +1129,8 @@
               "y": 400
             },
             "size": {
-              "width": 260,
-              "height": 100
+              "width": 520,
+              "height": 520
             },
             "attrs": {
               "body": {
@@ -1387,8 +1387,8 @@
               "y": 60
             },
             "size": {
-              "width": 220,
-              "height": 60
+              "width": 440,
+              "height": 440
             },
             "attrs": {
               "body": {
@@ -1514,8 +1514,8 @@
               "y": 140
             },
             "size": {
-              "width": 220,
-              "height": 60
+              "width": 440,
+              "height": 440
             },
             "attrs": {
               "body": {
@@ -1641,8 +1641,8 @@
               "y": 220
             },
             "size": {
-              "width": 220,
-              "height": 60
+              "width": 440,
+              "height": 440
             },
             "attrs": {
               "body": {
@@ -1768,8 +1768,8 @@
               "y": 300
             },
             "size": {
-              "width": 220,
-              "height": 60
+              "width": 440,
+              "height": 440
             },
             "attrs": {
               "body": {
